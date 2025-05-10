@@ -829,3 +829,33 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+
+
+ // Función para detectar dispositivos móviles
+  function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  }
+  
+  // Obtener los metadatos de la página para compartir
+  function getPageMetadata() {
+    const url = window.location.href;
+    const title = document.title || 'Página para compartir';
+    const description = document.querySelector('meta[name="description"]')?.getAttribute('content') || 'Échale un vistazo a esta página';
+    
+    return { url, title, description };
+  }
+  
+  // Para dispositivos móviles, usamos las URLs de aplicación nativa cuando sea posible
+  document.addEventListener('DOMContentLoaded', function() {
+    if (isMobileDevice()) {
+      const metadata = getPageMetadata();
+      
+      // WhatsApp en móvil usa un esquema de URL diferente
+      const whatsappLinks = document.querySelectorAll('a[onclick*="whatsapp"]');
+      whatsappLinks.forEach(link => {
+        link.setAttribute('href', `whatsapp://send?text=${encodeURIComponent(metadata.title + ' ' + metadata.url)}`);
+        link.removeAttribute('onclick');
+      });
+    }
+  });
