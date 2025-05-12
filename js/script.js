@@ -859,3 +859,141 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   });
+
+
+  // Script para controlar el comportamiento del megamenú
+document.addEventListener('DOMContentLoaded', function() {
+  // 1. Detectar si estamos en una pantalla grande (desktop)
+  const isDesktop = window.innerWidth >= 1024;
+  
+  // 2. Solo aplicar el código específico de desktop si corresponde
+  if (isDesktop) {
+    setupDesktopMenu();
+  }
+  
+  // 3. Configurar evento de redimensionamiento para manejar cambios de tamaño
+  window.addEventListener('resize', function() {
+    const currentIsDesktop = window.innerWidth >= 1024;
+    
+    // Si cambiamos entre móvil y desktop, recargar la página
+    // (Alternativa: re-ejecutar la configuración apropiada)
+    if (currentIsDesktop !== isDesktop) {
+      // Opcional: en lugar de recargar, puedes ejecutar la configuración adecuada
+      // location.reload();
+      if (currentIsDesktop) {
+        setupDesktopMenu();
+      } else {
+        teardownDesktopMenu();
+      }
+    }
+  });
+  
+  // Función para configurar el menú desktop
+  function setupDesktopMenu() {
+    // Obtener todos los elementos de menú con megamenú
+    const menuItems = document.querySelectorAll('.desktop-menu-item.has-megamenu');
+    
+    // Para cada elemento del menú que tiene megamenú
+    menuItems.forEach(function(item) {
+      // 4. Variables para controlar el temporizador (evitar cierres accidentales)
+      let openTimer = null;
+      let closeTimer = null;
+      
+      // 5. Listener para cuando el mouse entra en el ítem
+      item.addEventListener('mouseenter', function() {
+        // Cancelar cualquier cierre programado
+        if (closeTimer) {
+          clearTimeout(closeTimer);
+          closeTimer = null;
+        }
+        
+        // Abrir el megamenú con un pequeño retraso
+        openTimer = setTimeout(function() {
+          // Cerrar otros megamenús abiertos primero
+          document.querySelectorAll('.desktop-megamenu.active').forEach(function(menu) {
+            if (!item.contains(menu)) {
+              menu.classList.remove('active');
+            }
+          });
+          
+          // Abrir este megamenú
+          const megamenu = item.querySelector('.desktop-megamenu');
+          if (megamenu) {
+            megamenu.classList.add('active');
+            megamenu.style.display = 'block';
+          }
+        }, 50); // 50ms de retraso para abrir (apenas perceptible)
+      });
+      
+      // 6. Listener para cuando el mouse sale del ítem
+      item.addEventListener('mouseleave', function() {
+        // Cancelar cualquier apertura programada
+        if (openTimer) {
+          clearTimeout(openTimer);
+          openTimer = null;
+        }
+        
+        // Cerrar el megamenú con un pequeño retraso
+        closeTimer = setTimeout(function() {
+          const megamenu = item.querySelector('.desktop-megamenu');
+          if (megamenu) {
+            megamenu.classList.remove('active');
+            megamenu.style.display = '';
+          }
+        }, 200); // 200ms de retraso para cerrar
+      });
+      
+      // 7. Añadir manejo de clic para dispositivos táctiles
+      const menuToggle = item.querySelector('.desktop-dropdown-toggle');
+      if (menuToggle) {
+        menuToggle.addEventListener('click', function(e) {
+          // Prevenir navegación si hay megamenú
+          if (item.querySelector('.desktop-megamenu')) {
+            e.preventDefault();
+            
+            // Alternar estado del megamenú
+            const megamenu = item.querySelector('.desktop-megamenu');
+            const isActive = megamenu.classList.contains('active');
+            
+            // Cerrar otros megamenús primero
+            document.querySelectorAll('.desktop-megamenu.active').forEach(function(menu) {
+              menu.classList.remove('active');
+              menu.style.display = '';
+            });
+            
+            // Abrir/cerrar este megamenú
+            if (!isActive) {
+              megamenu.classList.add('active');
+              megamenu.style.display = 'block';
+            }
+          }
+        });
+      }
+    });
+    
+    // 8. Cerrar al hacer clic fuera del menú
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.desktop-menu-item')) {
+        document.querySelectorAll('.desktop-megamenu.active').forEach(function(menu) {
+          menu.classList.remove('active');
+          menu.style.display = '';
+        });
+      }
+    });
+  }
+  
+  // Función para desactivar el menú desktop
+  function teardownDesktopMenu() {
+    // Obtener todos los elementos de menú con megamenú
+    const menuItems = document.querySelectorAll('.desktop-menu-item.has-megamenu');
+    
+    // Eliminar listeners (simplificado - en un caso real habría que eliminar cada listener específico)
+    menuItems.forEach(function(item) {
+      const megamenu = item.querySelector('.desktop-megamenu');
+      if (megamenu) {
+        megamenu.classList.remove('active');
+        megamenu.style.display = '';
+      }
+    });
+  }
+});

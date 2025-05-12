@@ -7590,3 +7590,198 @@ to{
     max-width: 100%;
   }
 }
+/* Estilos para el menú desktop */
+.desktop-menu {
+  display: none; /* Oculto por defecto */
+  width: 100%;
+  justify-content: flex-end; /* Alinea los elementos hacia la derecha */
+}
+
+/* Contenedor de la lista de menú - SOLO PARA EL MENÚ PRINCIPAL */
+.desktop-menu > ul {
+  display: flex;
+  justify-content: flex-end; /* Alinea los elementos hacia la derecha */
+  width: 100%;
+  margin-right: 2rem; /* Añade margen a la derecha */
+}
+
+/* Nuevo estilo específico para las listas dentro del megamenú */
+.desktop-megamenu ul {
+  display: block; /* Cambia a bloque para apilamiento vertical */
+  width: 100%;
+}
+
+/* Estilos para los items del menú */
+.desktop-menu-item {
+  position: relative;
+  padding: 0.5rem 0;
+  margin: 0 0.75rem; /* Añade margen horizontal para separar los enlaces */
+}
+
+/* Estilo para los enlaces del menú */
+.desktop-menu-item > a {
+  padding: 0.5rem 1rem; /* Aumenta el padding horizontal */
+  font-weight: 500;
+  position: relative;
+  white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+  color: #000; /* Color de texto por defecto */
+}
+
+.dark .desktop-menu-item > a {
+  color: #fff; /* Color de texto en modo oscuro */
+}
+
+/* Indicador visual para enlaces con submenú */
+.desktop-dropdown-toggle:after {
+  content: '▼';
+  font-size: 0.6em;
+  margin-left: 0.4em;
+  vertical-align: middle;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+/* Rotar flecha cuando está activo */
+.desktop-menu-item:hover .desktop-dropdown-toggle:after,
+.desktop-menu-item.active .desktop-dropdown-toggle:after {
+  transform: rotate(180deg);
+}
+
+/* Megamenú - estilos base */
+.desktop-megamenu {
+  position: fixed; /* Usamos fixed para mejor control */
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem 0;
+  z-index: 1050;
+  top: 80px; /* Ajusta según la altura de tu header */
+  display: none; /* Oculto por defecto */
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos para tema oscuro */
+.dark .desktop-megamenu {
+  background-color: #1a202c; /* dark:bg-gray-900 */
+}
+
+/* Contenido del megamenú centrado */
+.desktop-megamenu .container {
+  max-width: 1200px; /* Limitar el ancho máximo */
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 0 2rem; /* Añadir padding para que no toque los bordes */
+}
+
+/* Animación del megamenú */
+.desktop-megamenu {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+}
+
+/* Mostrar megamenú al hacer hover */
+.desktop-menu-item.has-megamenu:hover .desktop-megamenu,
+.desktop-menu-item.has-megamenu:focus-within .desktop-megamenu,
+.desktop-megamenu.active {
+  display: block !important;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Añadir efecto hover para los enlaces */
+.desktop-menu-item > a:hover {
+  color: var(--color-primary, #6366f1); /* Color primario al hacer hover */
+}
+
+/* Añadir subrayado en hover */
+.desktop-menu-item > a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--color-primary, #6366f1);
+  transition: all 0.3s ease;
+}
+
+.desktop-menu-item > a:hover::after {
+  width: 80%;
+  left: 10%;
+}
+
+/* Estilos para columnas del megamenú */
+.desktop-megamenu .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Estilos para los títulos del megamenú */
+.desktop-megamenu h3 {
+  color: var(--color-primary, #6366f1);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para los enlaces del megamenú */
+.desktop-megamenu ul li {
+  display: block; /* Asegurar que cada elemento li sea un bloque */
+  width: 100%;
+}
+
+.desktop-megamenu ul li a {
+  display: block;
+  padding: 0.5rem 0;
+  color: #4b5563; /* gray-700 */
+  transition: color 0.2s ease;
+}
+
+.dark .desktop-megamenu ul li a {
+  color: #d1d5db; /* dark:gray-300 */
+}
+
+.desktop-megamenu ul li a:hover {
+  color: var(--color-primary, #6366f1);
+}
+
+/* Media queries */
+@media (min-width: 1024px) {
+  /* Mostrar el menú desktop y ocultar el móvil */
+  .desktop-menu {
+    display: flex;
+  }
+  
+  /* Ocultar el botón de menú hamburguesa en desktop */
+  .menu-open, 
+  button[aria-label="Menu"],
+  .hamburger-menu {
+    display: none !important;
+  }
+  
+  /* En desktop, el menú móvil no debe mostrarse */
+  .menu.fixed,
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  /*   En móvil y tablet, ocultar el menú desktop */
+  .desktop-menu {
+    display: none;
+  }
+  
+  /* Asegurarse de que el menú hamburguesa esté visible en móvil */
+  .menu-open, 
+  button[aria-label="Menu"],
+  .hamburger-menu {
+    display: block;
+  }
+}
+

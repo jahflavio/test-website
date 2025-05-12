@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="es">
 
 <head>
   <meta charset="utf-8" />
@@ -485,69 +485,86 @@
   </div>
 
 
-  <main class="lg:mb-[600px] relative z-10 bg-backgroundBody dark:bg-dark">
-<<<<<<< HEAD
+  <main class="relative z-10 bg-backgroundBody dark:bg-dark">
     <!--=====================================
    Hero Section
 ======================================-->
 
-    <section
-      class="pt-[120px] sm:pt-[135px] md:pt-[150px] lg:pt-44 xl:pt-[200px] pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px] relative overflow-hidden">
-      <!-- Gradient Background Effect -->
-      <div id="hero-gradient-wrapper"
-        class="absolute w-full h-fw-full top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 -z-10 blur-[60px] scale-90">
-        <img src="images/hero-gradient-background.png" alt="hero-gradient-background" id="hero-gradient"
-          class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
-      </div>
 
-      <!-- Hero Content -->
-      <div class="container relative z-10">
-        <!-- Status Badge -->
-        <div class="flex justify-center items-center reveal-me">
-          <div class="rv-badge mb-2">
-            <span class="rv-badge-text">Expertos en Soluciones Tecnológicas</span>
-          </div>
+
+    <section class="relative pt-[137px] md:pt-[160px] xl:pt-[180px] overflow-hidden">
+      <!-- Gradient Background Wrapper -->
+      <div id="hero-gradient-wrapper"
+        class="absolute top-0 md:-top-[10%] left-0 lg:-left-[17%] 2xl:left-0 -z-10 blur-[65px]">
+        <img src="images/hero-gradient-background.png" alt="hero-gradient-background" id="hero-gradient"
+          class="scale-50 left-0 -top-[10%]" />
+      </div>
+      <div class="max-w-[1600px] mx-auto px-4 md:px-[30px] flex flex-col gap-y-10 gap-x-5 lg:flex-row justify-between">
+        <!-- Content -->
+        <div class="md:flex-1">
+          <h1
+            class="reveal-me text-5xl sm:text-[55px] md:text-[67px] 2xl:text-8xl font-normal leading-tight 2xl:leading-[1.17] tracking-[-2px] 2xl:tracking-[-2.88px]">
+            Impulsando <br class="hidden lg:block" />
+            la transformación <br class="hidden lg:block" />
+            <i class="font-geologica">&tecnológica</i>
+          </h1>
+          <p class="reveal-me mt-3">
+            Desde infraestructura IT hasta soluciones cloud avanzadas, convertimos
+
+            desafíos digitales en ventajas competitivas.
+          </p>
+
+          <!-- Hero Buttons -->
+          <ul class="mt-7 md:mt-9 lg:mt-14 cursor-pointer reveal-me-2">
+            <li>
+              <a href="/contact.html" class="rv-button rv-button-primary rv-button-sm block md:inline-block">
+                <div class="rv-button-top text-center">
+                  <span>Contáctanos</span>
+                </div>
+                <div class="rv-button-bottom text-center">
+                  <span class="text-nowrap">Contáctanos</span>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <h1 class="text-center reveal-me">
-          Transformamos desafíos en
-
-          <i class="font-geologica"> oportunidades</i>
-          tecnológicas
-        </h1>
-        <p class="max-w-3xl text-center mx-auto mt-3 reveal-me">
-          En B drive diseñamos, integramos y gestionamos soluciones tecnológicas a medida. Convertimos ideas ambiciosas
-          en realidades tangibles, haciendo posible lo imposible con soluciones innovadoras que impulsan el crecimiento,
-          transforman procesos y ayudan a tu organización a alcanzar sus objetivos estratégicos.
-        </p>
-
-        <!-- Hero Buttons -->
-        <ul class="flex justify-center list-none mt-14 reveal-me">
-          <li class="text-center w-full">
-            <a href="/servicios.html" class="rv-button rv-button-primary block md:inline-block cursor-pointer"
-              id="hero-button-02">
-              <div class="rv-button-top">
-                <span>Descubre Nuestras Soluciones</span>
+        <div class="md:flex-1 flex flex-col sm:flex-row gap-5">
+          <figure class="mt-[78px] relative">
+            <!-- logo -->
+            <div
+              class="absolute w-[120px] h-[120px] rounded-full flex items-center justify-center mx-auto before:absolute before:content-[''] before:w-[140px] before:h-[140px] before:rounded-full before:bg-white dark:before:bg-secondary -top-[12%] -left-0 lg:-left-[12%]">
+              <figure class="relative z-20">
+                <img src="images/icons/text-circle-logo.png" alt="text-circle-logo" class="inline dark:hidden" />
+                <img src="images/icons/text-circle-dark-logo.png" alt="text-circle-logo" class="hidden dark:inline" />
+              </figure>
+              <div class="text-2 text-[10px] bg-secondary dark:bg-backgroundBody !w-[120px] !h-[120px] rounded-full">
+                B drive Soluciones con rumbo claro.
               </div>
-              <div class="rv-button-bottom">
-                <span class="text-nowrap">Descubre Nuestras Soluciones</span>
-              </div>
-            </a>
-          </li>
-        </ul>
+            </div>
+
+            <img src="images/hero-img/startup-hero-1.jpg" alt="hero-img" class="max-sm:w-full" />
+          </figure>
+          <figure>
+            <img src="images/hero-img/startup-hero-2.jpg" alt="hero-img" class="max-sm:w-full" />
+          </figure>
+        </div>
       </div>
+    </section>
 
-      <!-- Decorative Images -->
-      <!-- Cambié la clase reveal-me por hero-image para las figuras -->
-      <figure class="absolute top-[42%] -left-[4.5%] hidden md:block hero-image opacity-0" id="hero-image-1">
-        <img src="/images/hero-img/hero-img-05.png" alt="" />
-      </figure>
-      <figure class="absolute top-[12%] -right-[5%] hidden md:block hero-image opacity-0" id="hero-image-2">
-        <img src="/images/hero-img/hero-img-06.png" alt="" />
-      </figure>
-      <figure class="absolute bottom-[0%] right-[18.5%] hidden lg:block hero-image opacity-0" id="hero-image-3">
-        <img src="/images/hero-img/hero-img-07.png" alt="" />
-      </figure>
+
+
+    <!-- Decorative Images -->
+    <!-- Cambié la clase reveal-me por hero-image para las figuras -->
+    <figure class="absolute top-[42%] -left-[4.5%] hidden md:block hero-image opacity-0" id="hero-image-1">
+      <img src="/images/hero-img/hero-img-05.png" alt="" />
+    </figure>
+    <figure class="absolute top-[12%] -right-[5%] hidden md:block hero-image opacity-0" id="hero-image-2">
+      <img src="/images/hero-img/hero-img-06.png" alt="" />
+    </figure>
+    <figure class="absolute bottom-[0%] right-[18.5%] hidden lg:block hero-image opacity-0" id="hero-image-3">
+      <img src="/images/hero-img/hero-img-07.png" alt="" />
+    </figure>
     </section>
 
     <!--==================================
@@ -696,168 +713,16 @@ Certificaciones Section
                         <path d="M1 12.5L13 0.5M13 0.5H3.25M13 0.5V10.25"
                           class="stroke-backgroundBody dark:stroke-secondary" stroke-linecap="round"
                           stroke-linejoin="round" />
-=======
-  <!--=====================================
-  Hero Section
-  ======================================-->
-  <section class="pt-[120px] sm:pt-[135px] md:pt-[150px] lg:pt-44 xl:pt-[200px] pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px] relative overflow-hidden">
-    <!-- Gradient Background Effect -->
-    <div id="hero-gradient-wrapper" class="absolute w-full h-fw-full top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 -z-10 blur-[60px] scale-90">
-      <img src="images/hero-gradient-background.png" alt="hero-gradient-background" id="hero-gradient" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
-    </div>
-
-    <!-- Hero Content -->
-    <div class="container relative z-10">
-      <!-- Status Badge -->
-      <div class="flex justify-center items-center reveal-me">
-        <div class="rv-badge mb-2">
-          <span class="rv-badge-text">Expertos en Soluciones Tecnológicas</span>
-        </div>
-      </div>
-
-      <h1 class="text-center reveal-me">
-        Transformamos retos tecnológicos en
-        <i class="font-geologica"> ventajas</i>
-        competitivas
-      </h1>
-      <p class="max-w-3xl text-center mx-auto mt-3 reveal-me">
-        Soluciones de TI innovadoras para impulsar la eficiencia, seguridad y competitividad de tu organización. En B drive diseñamos, integramos y gestionamos soluciones tecnológicas a medida que transforman procesos y ayudan a tu organización a alcanzar sus objetivos estratégicos.
-      </p>
-
-      <!-- Hero Buttons -->
-      <ul class="flex justify-center list-none mt-14 reveal-me">
-        <li class="text-center w-full">
-          <a href="/servicios.html" class="rv-button rv-button-primary block md:inline-block cursor-pointer" id="hero-button-02">
-            <div class="rv-button-top">
-              <span>Descubre Nuestras Soluciones</span>
-            </div>
-            <div class="rv-button-bottom">
-              <span class="text-nowrap">Descubre Nuestras Soluciones</span>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Decorative Images -->
-    <figure class="absolute top-[42%] -left-[4.5%] hidden md:block hero-image opacity-0" id="hero-image-1">
-      <img src="/images/hero-img/hero-img-05.png" alt="" />
-    </figure>
-    <figure class="absolute top-[12%] -right-[5%] hidden md:block hero-image opacity-0" id="hero-image-2">
-      <img src="/images/hero-img/hero-img-06.png" alt="" />
-    </figure>
-    <figure class="absolute bottom-[0%] right-[18.5%] hidden lg:block hero-image opacity-0" id="hero-image-3">
-      <img src="/images/hero-img/hero-img-07.png" alt="" />
-    </figure>
-  </section>
-
-  <!--==================================
-  Nuestro Impacto Section
-  ===================================-->
-  <section class="pt-14 md:pt-16 lg:pt-[60px] xl:pt-[70px] pb-12 md:pb-8 lg:pb-[0px] xl:pb-[0px] relative overflow-hidden">
-    <div class="container reveal-me">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-        <!-- Texto de impacto en lado izquierdo -->
-        <div class="w-full md:w-1/2">
-          <div class="md:self-start">
-            <h2 class="text-appear text-3xl lg:leading-[1.1] text-left">
-              Nuestro
-              <i class="font-geologica"> Impacto </i>
-            </h2>
-            <br>
-          </div>
-          <h3 class="reveal-text-2 text-base text-secondary/90 dark:text-backgroundBody/70 text-left lg:text-xl xl:text-2xl font-normal lg:leading-[1.2] lg:tracking-[0.72px]">
-            Con <strong>más de 1000 certificaciones</strong> y presencia en CDMX, Querétaro y Monterrey, 
-            ofrecemos estrategias tecnológicas adaptables a diversos sectores como salud, 
-            energía, educación, finanzas, retail, manufactura y sector público.
-          </h3>
-        </div>
-
-        <!-- Cifras clave en lado derecho -->
-        <div class="w-full md:w-1/2 flex justify-center items-center">
-          <div class="relative w-[168px] h-[168px] bg-secondary dark:bg-backgroundBody rounded-[50%] flex items-center justify-center">
-            <figure>
-              <img src="images/icons/text-circle-logo.png" alt="text-circle-logo" class="inline dark:hidden" />
-              <img src="images/icons/text-circle-dark-logo.png" alt="text-circle-logo" class="hidden dark:inline" />
-            </figure>
-            <div class="text">
-              <p>B drive Soluciones con rumbo claro.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--==================================
-  Nuestras Soluciones Section
-  ===================================-->
-  <section class="pt-14 md:pt-16 lg:pt-[88px] xl:pt-[100px] pb-14 md:pb-16 lg:pb-[44px] xl:pb-[50px]">
-    <div class="container">
-      <!-- Encabezado de la sección -->
-      <div class="flex flex-col md:flex-row gap-x-10 gap-y-4 justify-center lg:justify-between items-start mb-16 lg:mb-24">
-        <!-- Área de título -->
-        <div class="flex-1 md:self-start">
-          <h2 class="text-appear lg:leading-[1.1]">
-            Nuestras Soluciones
-          </h2>
-        </div>
-
-        <!-- Descripción -->
-        <div class="w-full md:max-w-72 lg:max-w-[470px] md:self-end">
-          <p class="text-appear max-w-lg md:text-right md:place-self-end">
-            <strong>Soluciones integrales para cada necesidad.</strong>
-            Diseñamos, integramos y gestionamos soluciones tecnológicas a medida para impulsar el crecimiento de tu organización.
-          </p>
-        </div>
-      </div>
-
-      <!-- Cards de Soluciones -->
-      <div class="container px-5 xl:px-5">
-        <div class="flex flex-col md:flex-row justify-center gap-6">
-          <!-- Servicios Administrados Card -->
-          <div class="relative group reveal-me overflow-hidden w-full md:w-1/2 lg:w-1/3 max-w-[380px] min-h-[410px] rounded-xl mb-6 md:mb-0 mx-auto">
-            <div>
-              <!-- Front Side -->
-              <div class="absolute w-full h-full px-[30px] py-10 flex-1 transition-all duration-700 translate-y-0 group-hover:-translate-y-full opacity-100 group-hover:opacity-0 rounded-xl border border-gray-200 dark:border-gray-700">
-                <span class="flex justify-center w-full">
-                  <img src="images/icons/cloud.svg" alt="Servicios Administrados" width="150" height="150" />
-                </span>
-                <h5 class="mb-4 mt-9 text-xl leading-[1.2] -tracking-[1.08px] text-center">
-                  Servicios Administrados
-                </h5>
-                <p class="text-center text-base">Soluciones gestionadas para optimizar su infraestructura tecnológica.</p>
-              </div>
-
-              <!-- Hover Back Side -->
-              <div class="absolute w-full h-full flex-1 px-[30px] py-12 z-10 bg-secondary dark:bg-backgroundBody transition-all duration-700 translate-y-full group-hover:translate-y-0 group-hover:inset-0 rounded-xl border border-gray-200 dark:border-gray-700">
-                <p class="mb-8 text-base text-backgroundBody dark:text-secondary text-justify">
-                  Ofrecemos servicios completos de gestión de infraestructura, monitorización 24/7, soporte técnico y administración de seguridad para garantizar la operatividad y protección de sus sistemas críticos.
-                </p>
-                <a href="/servicios.html" class="rv-button rv-button-sm-v2 rv-button-secondary-v2">
-                  <div class="rv-button-top flex items-center">
-                    <span class="text-nowrap">Conocer más</span>
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
-                        <path d="M1 12.5L13 0.5M13 0.5H3.25M13 0.5V10.25" class="stroke-backgroundBody dark:stroke-secondary" stroke-linecap="round" stroke-linejoin="round" />
->>>>>>> 0024e9a0671ab1ff70f985d8191dafc2a55cc9dc
                       </svg>
                     </span>
                   </div>
                   <div class="rv-button-bottom flex items-center">
-<<<<<<< HEAD
                     <span class="text-nowrap">Buzón de ayuda</span>
                     <span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
                         <path d="M1 12.5L13 0.5M13 0.5H3.25M13 0.5V10.25"
                           class="stroke-secondary dark:stroke-backgroundBody" stroke-linecap="round"
                           stroke-linejoin="round" />
-=======
-                    <span class="text-nowrap">Conocer más</span>
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
-                        <path d="M1 12.5L13 0.5M13 0.5H3.25M13 0.5V10.25" class="stroke-secondary dark:stroke-backgroundBody" stroke-linecap="round" stroke-linejoin="round" />
->>>>>>> 0024e9a0671ab1ff70f985d8191dafc2a55cc9dc
                       </svg>
                     </span>
                   </div>
@@ -866,7 +731,6 @@ Certificaciones Section
             </div>
           </div>
 
-<<<<<<< HEAD
           <!-- Service Card2 -->
           <div
             class="relative group reveal-me overflow-hidden w-full md:w-1/2 lg:w-1/3 max-w-[380px] min-h-[410px] rounded-xl mb-6 md:mb-0 mx-auto">
@@ -895,50 +759,10 @@ Certificaciones Section
                   de
                   hoy en día.
                 </p>
-=======
-          <!-- Soluciones Empresariales Card -->
-          <div class="relative group reveal-me overflow-hidden w-full md:w-1/2 lg:w-1/3 max-w-[380px] min-h-[410px] rounded-xl mb-6 md:mb-0 mx-auto">
-            <div>
-              <!-- Front Side -->
-              <div class="absolute w-full h-full px-[30px] py-10 flex-1 transition-all duration-700 translate-y-0 group-hover:-translate-y-full opacity-100 group-hover:opacity-0 rounded-xl border border-gray-200 dark:border-gray-700">
-                <span class="flex justify-center w-full">
-                  <img src="images/icons/connect.svg" alt="Soluciones Empresariales" width="150" height="150" />
-                </span>
-                <h5 class="mb-4 mt-9 text-xl leading-[1.2] -tracking-[1.08px] text-center">
-                  Soluciones Empresariales
-                </h5>
-                <p class="text-center text-base">Estrategias integrales para impulsar la transformación digital.</p>
-              </div>
-
-              <!-- Hover Back Side -->
-              <div class="absolute w-full h-full flex-1 px-[30px] py-12 z-10 bg-secondary dark:bg-backgroundBody transition-all duration-700 translate-y-full group-hover:translate-y-0 group-hover:inset-0 rounded-xl border border-gray-200 dark:border-gray-700">
-                <p class="mb-8 text-base text-backgroundBody dark:text-secondary text-justify">
-                  Implementamos soluciones de ciberseguridad, comunicaciones unificadas, infraestructura TI, cloud computing y automatización de procesos adaptadas a las necesidades específicas de su organización.
-                </p>
-                <a href="/servicios.html" class="rv-button rv-button-sm-v2 rv-button-secondary-v2">
-                  <div class="rv-button-top flex items-center">
-                    <span class="text-nowrap">Conocer más</span>
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
-                        <path d="M1 12.5L13 0.5M13 0.5H3.25M13 0.5V10.25" class="stroke-backgroundBody dark:stroke-secondary" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                  </div>
-                  <div class="rv-button-bottom flex items-center">
-                    <span class="text-nowrap">Conocer más</span>
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
-                        <path d="M1 12.5L13 0.5M13 0.5H3.25M13 0.5V10.25" class="stroke-secondary dark:stroke-backgroundBody" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                  </div>
-                </a>
->>>>>>> 0024e9a0671ab1ff70f985d8191dafc2a55cc9dc
               </div>
             </div>
           </div>
 
-<<<<<<< HEAD
           <!-- Service Card3 -->
           <div
             class="relative group reveal-me overflow-hidden w-full md:w-1/2 lg:w-1/3 max-w-[380px] min-h-[410px] rounded-xl mb-6 md:mb-0 mx-auto">
@@ -964,51 +788,11 @@ Certificaciones Section
                   información de manera efectiva y eficiente. Es una herramienta importante para cualquier organización
                   que quiera mejorar la gestión de sus servicios de TI.
                 </p>
-=======
-          <!-- Desarrollo y Software Card -->
-          <div class="relative group reveal-me overflow-hidden w-full md:w-1/2 lg:w-1/3 max-w-[380px] min-h-[410px] rounded-xl mb-6 md:mb-0 mx-auto">
-            <div>
-              <!-- Front Side -->
-              <div class="absolute w-full h-full px-[30px] py-10 flex-1 transition-all duration-700 translate-y-0 group-hover:-translate-y-full opacity-100 group-hover:opacity-0 rounded-xl border border-gray-200 dark:border-gray-700">
-                <span class="flex justify-center w-full">
-                  <img src="images/icons/code.svg" alt="Desarrollo y Software" width="150" height="150" />
-                </span>
-                <h5 class="mb-4 mt-9 text-xl leading-[1.2] -tracking-[1.08px] text-center">
-                  Desarrollo y Software
-                </h5>
-                <p class="text-center text-base">Creación de aplicaciones empresariales personalizadas.</p>
-              </div>
-
-              <!-- Hover Back Side -->
-              <div class="absolute w-full h-full flex-1 px-[30px] py-12 z-10 bg-secondary dark:bg-backgroundBody transition-all duration-700 translate-y-full group-hover:translate-y-0 group-hover:inset-0 rounded-xl border border-gray-200 dark:border-gray-700">
-                <p class="mb-8 text-base text-backgroundBody dark:text-secondary text-justify">
-                  Desarrollamos soluciones de software a medida, integraciones de sistemas, análisis de datos y business intelligence para optimizar sus procesos operativos y toma de decisiones estratégicas.
-                </p>
-                <a href="/servicios.html" class="rv-button rv-button-sm-v2 rv-button-secondary-v2">
-                  <div class="rv-button-top flex items-center">
-                    <span class="text-nowrap">Conocer más</span>
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
-                        <path d="M1 12.5L13 0.5M13 0.5H3.25M13 0.5V10.25" class="stroke-backgroundBody dark:stroke-secondary" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                  </div>
-                  <div class="rv-button-bottom flex items-center">
-                    <span class="text-nowrap">Conocer más</span>
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
-                        <path d="M1 12.5L13 0.5M13 0.5H3.25M13 0.5V10.25" class="stroke-secondary dark:stroke-backgroundBody" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                    </span>
-                  </div>
-                </a>
->>>>>>> 0024e9a0671ab1ff70f985d8191dafc2a55cc9dc
               </div>
             </div>
           </div>
         </div>
       </div>
-<<<<<<< HEAD
 
       <!-- Segunda fila de Cards -->
       <div class="container px-5 xl:px-5 mt-8">
@@ -1369,7 +1153,168 @@ Certificaciones Section
 
       </div>
     </section>
+    <!--=====================================
+   Our-Expertise Section
+======================================-->
+    <section
+      class="pt-14 md:pt-16 lg:pt-[88px] xl:pt-[100px] pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px] relative overflow-hidden">
+      <div class="container">
+        <!-- Section Header -->
+        <div
+          class="flex flex-col md:flex-row gap-y-6 gap-x-10 justify-center lg:justify-start items-start md:items-end mb-10 md:mb-20">
+          <div class="flex-1">
+            <div class="rv-badge reveal-me">
+              <span class="rv-badge-text">¿Por qué elegir B drive?</span>
+            </div>
+            <h2 class="text-appear mt-3 md:mt-4">
+              Transformamos <i class="font-geologica">retos tecnológicos</i> en ventajas competitivas
+            </h2>
+          </div>
+          <div class="flex-1 md:max-w-[470px]">
+            <p class="text-appear md:text-right">
+              Soluciones de TI innovadoras para impulsar la eficiencia, seguridad y competitividad de tu organización.
+            </p>
+          </div>
+        </div>
 
+        <!-- content Area -->
+
+        <article>
+          <div class="flex flex-col md:flex-row max-lg:flex-wrap mb-[30px] gap-[30px] reveal-me">
+            <!--  -->
+            <div class="border dark:border-dark flex-1 px-[30px] py-10">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                  <rect width="60" height="60" class="dark:fill-secondary fill-backgroundBody" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.6422 28.5873L26.8523 21.4072L23.0599 28.5873C22.7916 29.1124 22.4037 29.5671 21.9274 29.9148C21.4483 30.2643 20.8946 30.498 20.31 30.5973L12.5001 32.1224L17.9525 38.6224C18.3203 39.0237 18.5974 39.4995 18.765 40.0174C18.9312 40.5343 18.9833 41.081 18.9175 41.62L17.88 50.0001L25.0724 46.535C25.6282 46.2696 26.2364 46.132 26.8523 46.1325C27.4307 46.132 28.0007 46.2701 28.5148 46.535L35.8696 49.7851L34.8297 41.5C34.7639 40.961 34.8159 40.4143 34.9822 39.8974C35.1497 39.3795 35.4268 38.9037 35.7946 38.5024L41.202 32.1124L33.3922 30.5873C32.8075 30.488 32.2539 30.2543 31.7747 29.9048C31.2997 29.5599 30.9119 29.1088 30.6422 28.5873Z"
+                    class="stroke-secondary dark:stroke-backgroundBody" stroke-width="1.2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M46.4725 11.8704C46.7073 11.6365 46.708 11.2566 46.4741 11.0218C46.2402 10.7871 45.8603 10.7864 45.6256 11.0203L46.4725 11.8704ZM36.9283 19.6854C36.6935 19.9192 36.6928 20.2991 36.9267 20.5339C37.1606 20.7686 37.5405 20.7693 37.7752 20.5355L36.9283 19.6854ZM47.9234 19.09C48.1582 18.8562 48.159 18.4763 47.9252 18.2415C47.6914 18.0067 47.3115 18.0059 47.0767 18.2397L47.9234 19.09ZM41.2768 24.0147C41.042 24.2486 41.0412 24.6284 41.275 24.8633C41.5088 25.0981 41.8887 25.0989 42.1235 24.8651L41.2768 24.0147ZM39.2259 10.4252C39.4607 10.1914 39.4615 9.81146 39.2277 9.57665C38.9939 9.34183 38.614 9.34102 38.3791 9.57483L39.2259 10.4252ZM32.5768 15.3524C32.342 15.5862 32.3411 15.9661 32.5749 16.2009C32.8088 16.4357 33.1887 16.4366 33.4235 16.2027L32.5768 15.3524ZM45.6256 11.0203L36.9283 19.6854L37.7752 20.5355L46.4725 11.8704L45.6256 11.0203ZM47.0767 18.2397L41.2768 24.0147L42.1235 24.8651L47.9234 19.09L47.0767 18.2397ZM38.3791 9.57483L32.5768 15.3524L33.4235 16.2027L39.2259 10.4252L38.3791 9.57483Z"
+                    class="fill-secondary dark:fill-backgroundBody" />
+                </svg>
+              </span>
+              <h5 class="mb-2.5 mt-5">Certificaciones de excelencia</h5>
+              <p>Más de 1000 certificaciones que avalan nuestra expertise técnica y compromiso con la calidad.</p>
+            </div>
+            <!--  -->
+            <div class="border dark:border-dark flex-1 px-[30px] py-10">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
+                  <rect width="60" height="60" transform="translate(0.333252)"
+                    class="dark:fill-secondary fill-backgroundBody" />
+                  <path
+                    d="M31.0833 12.5C31.0833 12.0858 30.7475 11.75 30.3333 11.75C29.919 11.75 29.5833 12.0858 29.5833 12.5H31.0833ZM29.5833 47.5C29.5833 47.9142 29.919 48.25 30.3333 48.25C30.7475 48.25 31.0833 47.9142 31.0833 47.5H29.5833ZM37.7532 16.875C37.7532 16.4608 37.4174 16.125 37.0032 16.125C36.589 16.125 36.2532 16.4608 36.2532 16.875H37.7532ZM36.2532 43.125C36.2532 43.5392 36.589 43.875 37.0032 43.875C37.4174 43.875 37.7532 43.5392 37.7532 43.125H36.2532ZM44.4133 21.25C44.4133 20.8358 44.0775 20.5 43.6633 20.5C43.2491 20.5 42.9133 20.8358 42.9133 21.25H44.4133ZM42.9133 38.75C42.9133 39.1642 43.2491 39.5 43.6633 39.5C44.0775 39.5 44.4133 39.1642 44.4133 38.75H42.9133ZM51.0833 25.625C51.0833 25.2108 50.7475 24.875 50.3333 24.875C49.919 24.875 49.5833 25.2108 49.5833 25.625H51.0833ZM49.5833 34.375C49.5833 34.7892 49.919 35.125 50.3333 35.125C50.7475 35.125 51.0833 34.7892 51.0833 34.375H49.5833ZM22.9133 43.125C22.9133 43.5392 23.2491 43.875 23.6633 43.875C24.0775 43.875 24.4133 43.5392 24.4133 43.125H22.9133ZM24.4133 16.875C24.4133 16.4608 24.0775 16.125 23.6633 16.125C23.2491 16.125 22.9133 16.4608 22.9133 16.875H24.4133ZM16.2532 38.75C16.2532 39.1642 16.589 39.5 17.0032 39.5C17.4174 39.5 17.7532 39.1642 17.7532 38.75H16.2532ZM17.7532 21.25C17.7532 20.8358 17.4174 20.5 17.0032 20.5C16.589 20.5 16.2532 20.8358 16.2532 21.25H17.7532ZM9.58325 34.375C9.58325 34.7892 9.91904 35.125 10.3333 35.125C10.7475 35.125 11.0833 34.7892 11.0833 34.375H9.58325ZM11.0833 25.625C11.0833 25.2108 10.7475 24.875 10.3333 24.875C9.91904 24.875 9.58325 25.2108 9.58325 25.625H11.0833ZM29.5833 12.5V47.5H31.0833V12.5H29.5833ZM36.2532 16.875V43.125H37.7532V16.875H36.2532ZM42.9133 21.25V38.75H44.4133V21.25H42.9133ZM49.5833 25.625V34.375H51.0833V25.625H49.5833ZM24.4133 43.125V16.875H22.9133V43.125H24.4133ZM17.7532 38.75V21.25H16.2532V38.75H17.7532ZM11.0833 34.375V25.625H9.58325V34.375H11.0833Z"
+                    class="fill-secondary dark:fill-backgroundBody" />
+                </svg>
+              </span>
+              <h5 class="mb-2.5 mt-5">Presencia estratégica</h5>
+              <p>Operaciones en 3 ciudades estratégicas para brindar soporte rápido y efectivo a nivel nacional.</p>
+            </div>
+            <!--  -->
+            <div class="border dark:border-dark flex-1 px-[30px] py-10">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
+                  <rect width="60" height="60" transform="translate(0.666504)"
+                    class="dark:fill-secondary fill-backgroundBody" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M24.2636 10L14.9521 27.7771H24.2636L17.2807 50L46.3807 27.7771H33.5779L40.5607 10H24.2636Z"
+                    class="stroke-secondary dark:stroke-backgroundBody" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+              <h5 class="mb-2.5 mt-5">Enfoque estratégico</h5>
+              <p>Convertimos la tecnología en una ventaja competitiva alineada con los objetivos de tu negocio.</p>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row max-lg:flex-wrap mb-[30px] gap-[30px] reveal-me">
+            <!--  -->
+            <div class="border dark:border-dark px-[30px] py-10 flex-1 reveal-me">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                  <rect width="60" height="60" class="dark:fill-secondary fill-backgroundBody" />
+                  <path
+                    d="M9.61413 20.7855C9.25894 20.9986 9.14377 21.4593 9.35688 21.8144C9.56999 22.1696 10.0307 22.2848 10.3859 22.0717L9.61413 20.7855ZM24.2857 12.8571L24.7357 12.2571C24.4918 12.0742 24.1613 12.0571 23.8998 12.214L24.2857 12.8571ZM35.7143 21.4286L35.2643 22.0286C35.5379 22.2338 35.9157 22.2279 36.1828 22.0142L35.7143 21.4286ZM50.4685 10.5857C50.792 10.3269 50.8444 9.85493 50.5857 9.53148C50.3269 9.20803 49.8549 9.15559 49.5315 9.41435L50.4685 10.5857ZM46.3929 50C46.3929 50.4142 46.7286 50.75 47.1429 50.75C47.5571 50.75 47.8929 50.4142 47.8929 50H46.3929ZM47.8929 27.1429C47.8929 26.7286 47.5571 26.3929 47.1429 26.3929C46.7286 26.3929 46.3929 26.7286 46.3929 27.1429H47.8929ZM23.5357 50C23.5357 50.4142 23.8715 50.75 24.2857 50.75C24.6999 50.75 25.0357 50.4142 25.0357 50H23.5357ZM25.0357 27.1429C25.0357 26.7286 24.6999 26.3929 24.2857 26.3929C23.8715 26.3929 23.5357 26.7286 23.5357 27.1429H25.0357ZM34.9643 50C34.9643 50.4142 35.3001 50.75 35.7143 50.75C36.1285 50.75 36.4643 50.4142 36.4643 50H34.9643ZM36.4643 35.7143C36.4643 35.3001 36.1285 34.9643 35.7143 34.9643C35.3001 34.9643 34.9643 35.3001 34.9643 35.7143H36.4643ZM12.1071 50C12.1071 50.4142 12.4429 50.75 12.8571 50.75C13.2714 50.75 13.6071 50.4142 13.6071 50H12.1071ZM13.6071 35.7143C13.6071 35.3001 13.2714 34.9643 12.8571 34.9643C12.4429 34.9643 12.1071 35.3001 12.1071 35.7143H13.6071ZM10.3859 22.0717L24.6716 13.5003L23.8998 12.214L9.61413 20.7855L10.3859 22.0717ZM23.8357 13.4571L35.2643 22.0286L36.1643 20.8286L24.7357 12.2571L23.8357 13.4571ZM36.1828 22.0142L50.4685 10.5857L49.5315 9.41435L35.2458 20.8429L36.1828 22.0142ZM47.8929 50V27.1429H46.3929V50H47.8929ZM25.0357 50V27.1429H23.5357V50H25.0357ZM36.4643 50V35.7143H34.9643V50H36.4643ZM13.6071 50V35.7143H12.1071V50H13.6071Z"
+                    class="fill-secondary dark:fill-backgroundBody" />
+                </svg>
+              </span>
+              <h5 class="mb-2.5 mt-5">Soluciones empresariales</h5>
+              <p>Servicios de TI adaptados a los desafíos específicos de tu industria y negocio.</p>
+            </div>
+            <!--  -->
+            <div class="border dark:border-dark px-[30px] py-10 flex-1 reveal-me">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                  <rect width="60" height="60" class="dark:fill-secondary fill-backgroundBody" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M30.0011 16.6657C30.0011 20.3471 27.0166 23.3314 23.335 23.3314C19.6535 23.3314 16.6689 20.3471 16.6689 16.6657C16.6689 12.9843 19.6535 10 23.335 10C27.0166 10 30.0011 12.9843 30.0011 16.6657Z"
+                    class="stroke-secondary dark:stroke-backgroundBody" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M36.6673 40.6654C36.6673 45.8083 30.6983 49.9997 23.3322 49.9997C15.9661 49.9997 10 45.8197 10 40.6654C10 35.5111 15.9689 31.334 23.3351 31.334C30.7012 31.334 36.6673 35.5111 36.6673 40.6654Z"
+                    class="stroke-secondary dark:stroke-backgroundBody" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M44.1125 22.8897C44.1125 25.0988 42.3216 26.8897 40.1123 26.8897C37.903 26.8897 36.1121 25.0988 36.1121 22.8897C36.1121 20.6805 37.903 18.8896 40.1123 18.8896C41.1732 18.8896 42.1907 19.3111 42.9409 20.0612C43.6911 20.8114 44.1125 21.8288 44.1125 22.8897Z"
+                    class="stroke-secondary dark:stroke-backgroundBody" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M41.9995 47.3333C46.0391 47.6649 49.5989 44.6977 50 40.6647C49.5975 36.6328 46.038 33.6672 41.9995 33.999"
+                    class="stroke-secondary dark:stroke-backgroundBody" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+              <h5 class="mb-2.5 mt-5">Equipo multidisciplinario</h5>
+              <p>Profesionales especializados en diferentes áreas de TI para una solución integral a tus necesidades.
+              </p>
+            </div>
+          </div>
+          <!-- Nueva fila con los elementos adicionales -->
+          <div class="flex flex-col md:flex-row max-lg:flex-wrap gap-[30px] reveal-me">
+            <!--  -->
+            <div class="border dark:border-dark px-[30px] py-10 flex-1 reveal-me">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                  <rect width="60" height="60" class="dark:fill-secondary fill-backgroundBody" />
+                  <path d="M12.5 18.75H47.5M12.5 30H47.5M12.5 41.25H47.5"
+                    class="stroke-secondary dark:stroke-backgroundBody" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+              <h5 class="mb-2.5 mt-5">Desarrollo de software a medida</h5>
+              <p>Creamos soluciones personalizadas que responden a las necesidades específicas de tu organización.</p>
+            </div>
+            <!--  -->
+            <div class="border dark:border-dark px-[30px] py-10 flex-1 reveal-me">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                  <rect width="60" height="60" class="dark:fill-secondary fill-backgroundBody" />
+                  <path d="M36.25 13.75L46.25 23.75M41.25 11.25L11.25 41.25V48.75H18.75L48.75 18.75L41.25 11.25Z"
+                    class="stroke-secondary dark:stroke-backgroundBody" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+              <h5 class="mb-2.5 mt-5">Servicios administrados</h5>
+              <p>Gestión completa de tu infraestructura TI para que puedas enfocarte en el core de tu negocio.</p>
+            </div>
+            <!--  -->
+            <div class="border dark:border-dark px-[30px] py-10 flex-1 reveal-me">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                  <rect width="60" height="60" class="dark:fill-secondary fill-backgroundBody" />
+                  <path d="M30 10V50M10 20L50 20M15 40H45M20 10H40M15 20V50M45 20V50M10 50H50"
+                    class="stroke-secondary dark:stroke-backgroundBody" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+              <h5 class="mb-2.5 mt-5">Experiencia multi-industria</h5>
+              <p>Amplia trayectoria trabajando con sectores como Gobierno, Manufactura, Finanzas y Salud.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
     <!--=====================================
    Socios Section
 ======================================-->
@@ -1457,281 +1402,6 @@ Certificaciones Section
 
 
   </main>
-=======
-    </div>
-  </section>
-
-  <!--==================================
-  Industrias que Transformamos Section
-  ===================================-->
-  <section class="pt-14 md:pt-16 lg:pt-[60px] xl:pt-[70px] pb-12 md:pb-16 lg:pb-[88px] xl:pb-[100px]">
-    <div class="container">
-      <!-- Encabezado de la sección -->
-      <div class="flex flex-col md:flex-row gap-x-10 gap-y-4 justify-center lg:justify-between items-start mb-16 lg:mb-24">
-        <!-- Área de título -->
-        <div class="flex-1 md:self-start">
-          <h2 class="text-appear lg:leading-[1.1]">
-            Industrias que Transformamos
-          </h2>
-        </div>
-
-        <!-- Descripción -->
-        <div class="w-full md:max-w-72 lg:max-w-[470px] md:self-end">
-          <p class="text-appear max-w-lg md:text-right md:place-self-end">
-            <strong>Expertos en diversos sectores.</strong>
-            Adaptamos nuestras soluciones tecnológicas a las necesidades específicas de cada industria para maximizar el impacto positivo.
-          </p>
-        </div>
-      </div>
-
-      <!-- Grid de Industrias -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal-me">
-        <!-- Gobierno -->
-        <div class="bg-backgroundBody dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-all">
-          <div class="flex items-center mb-4">
-            <img src="images/icons/government.svg" alt="Gobierno" class="w-12 h-12 mr-4" />
-            <h4 class="text-xl font-medium">Gobierno</h4>
-          </div>
-          <p class="text-secondary/90 dark:text-backgroundBody/70">
-            Soluciones para digitalización de trámites, seguridad de datos gubernamentales y modernización de infraestructura pública.
-          </p>
-        </div>
-
-        <!-- Manufactura -->
-        <div class="bg-backgroundBody dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-all">
-          <div class="flex items-center mb-4">
-            <img src="images/icons/manufacturing.svg" alt="Manufactura" class="w-12 h-12 mr-4" />
-            <h4 class="text-xl font-medium">Manufactura</h4>
-          </div>
-          <p class="text-secondary/90 dark:text-backgroundBody/70">
-            Automatización industrial, IoT, integración de sistemas y optimización de cadenas de producción para mayor eficiencia.
-          </p>
-        </div>
-
-        <!-- Finanzas -->
-        <div class="bg-backgroundBody dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-all">
-          <div class="flex items-center mb-4">
-            <img src="images/icons/finance.svg" alt="Finanzas" class="w-12 h-12 mr-4" />
-            <h4 class="text-xl font-medium">Finanzas</h4>
-          </div>
-          <p class="text-secondary/90 dark:text-backgroundBody/70">
-            Ciberseguridad bancaria, sistemas de prevención de fraudes y soluciones para cumplimiento regulatorio en el sector financiero.
-          </p>
-        </div>
-
-        <!-- Salud -->
-        <div class="bg-backgroundBody dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-all">
-          <div class="flex items-center mb-4">
-            <img src="images/icons/healthcare.svg" alt="Salud" class="w-12 h-12 mr-4" />
-            <h4 class="text-xl font-medium">Salud</h4>
-          </div>
-          <p class="text-secondary/90 dark:text-backgroundBody/70">
-            Expedientes clínicos electrónicos, telemedicina y sistemas de gestión hospitalaria para mejorar la atención médica.
-          </p>
-        </div>
-
-        <!-- Energía -->
-        <div class="bg-backgroundBody dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-all">
-          <div class="flex items-center mb-4">
-            <img src="images/icons/energy.svg" alt="Energía" class="w-12 h-12 mr-4" />
-            <h4 class="text-xl font-medium">Energía</h4>
-          </div>
-          <p class="text-secondary/90 dark:text-backgroundBody/70">
-            Monitoreo en tiempo real, soluciones para eficiencia energética y sistemas de gestión para distribuidoras de energía.
-          </p>
-        </div>
-
-        <!-- Retail -->
-        <div class="bg-backgroundBody dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-all">
-          <div class="flex items-center mb-4">
-            <img src="images/icons/retail.svg" alt="Retail" class="w-12 h-12 mr-4" />
-            <h4 class="text-xl font-medium">Retail</h4>
-          </div>
-          <p class="text-secondary/90 dark:text-backgroundBody/70">
-            E-commerce, análisis de comportamiento del consumidor y soluciones de inventario para optimizar la experiencia de compra.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--==================================
-  Por qué B DRIVE IT Section
-  ===================================-->
-  <section class="pb-14 md:pb-16 lg:pb-[88px] lg:pt-[44px] xl:pb-[100px] xl:pt-[50px]">
-    <div class="container">
-      <!-- Encabezado de la sección -->
-      <div class="flex flex-col md:flex-row gap-x-10 gap-y-4 justify-center lg:justify-between items-start mb-16 lg:mb-24">
-        <!-- Área de título -->
-        <div class="flex-1 md:self-start">
-          <h2 class="text-appear lg:leading-[1.1]">
-            Por qué elegir
-            <i class="font-geologica">B drive IT</i>
-          </h2>
-        </div>
-
-        <!-- Descripción -->
-        <div class="w-full md:max-w-72 lg:max-w-[470px] md:self-end">
-          <p class="text-appear max-w-lg md:text-right md:place-self-end">
-            <strong>La excelencia es nuestro estándar.</strong>
-            Nuestras certificaciones y experiencia garantizan soluciones de la más alta calidad y seguridad para su organización.
-          </p>
-        </div>
-      </div>
-
-      <!-- Diferenciadores -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal-me">
-        <!-- Diferenciador 1 -->
-        <div class="text-center">
-          <div class="w-20 h-20 mx-auto mb-4 bg-primary rounded-full flex items-center justify-center">
-            <img src="images/icons/certification.svg" alt="Certificaciones" class="w-10 h-10" />
-          </div>
-          <h4 class="text-xl font-medium mb-2">+1000 Certificaciones</h4>
-          <p class="text-secondary/90 dark:text-backgroundBody/70">
-            Respaldados por certificaciones internacionales que garantizan la excelencia en cada proyecto.
-          </p>
-        </div>
-
-        <!-- Diferenciador 2 -->
-        <div class="text-center">
-          <div class="w-20 h-20 mx-auto mb-4 bg-primary rounded-full flex items-center justify-center">
-            <img src="images/icons/experience.svg" alt="Experiencia" class="w-10 h-10" />
-          </div>
-          <h4 class="text-xl font-medium mb-2">Expertise Multisectorial</h4>
-          <p class="text-secondary/90 dark:text-backgroundBody/70">
-            Profundo conocimiento en diversos sectores para ofrecer soluciones realmente adaptadas a cada industria.
-          </p>
-        </div>
-
-        <!-- Diferenciador 3 -->
-        <div class="text-center">
-          <div class="w-20 h-20 mx-auto mb-4 bg-primary rounded-full flex items-center justify-center">
-            <img src="images/icons/customization.svg" alt="Personalización" class="w-10 h-10" />
-          </div>
-          <h4 class="text-xl font-medium mb-2">Soluciones a Medida</h4>
-          <p class="text-secondary/90 dark:text-backgroundBody/70">
-            Cada proyecto es único. Desarrollamos soluciones personalizadas para sus necesidades específicas.
-          </p>
-        </div>
-
-        <!-- Diferenciador 4 -->
-        <div class="text-center">
-          <div class="w-20 h-20 mx-auto mb-4 bg-primary rounded-full flex items-center justify-center">
-            <img src="images/icons/support.svg" alt="Soporte" class="w-10 h-10" />
-          </div>
-          <h4 class="text-xl font-medium mb-2">Soporte Continuo</h4>
-          <p class="text-secondary/90 dark:text-backgroundBody/70">
-            Acompañamiento durante todo el ciclo de vida de la solución con monitoreo 24/7 y soporte especializado.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--==================================
-  Testimoniales Section
-  ===================================-->
-  <section class="pt-14 md:pt-16 lg:pt-[60px] xl:pt-[70px] pb-12 md:pb-16 lg:pb-[88px] xl:pb-[100px] bg-gray-50 dark:bg-dark/50">
-    <div class="container">
-      <!-- Encabezado de la sección -->
-      <div class="text-center mb-12 reveal-me">
-        <h2 class="text-appear lg:leading-[1.1] mb-4">
-          Lo que Dicen Nuestros Clientes
-        </h2>
-        <p class="max-w-2xl mx-auto">
-          Las experiencias de quienes han confiado en nuestras soluciones tecnológicas hablan por sí mismas.
-        </p>
-      </div>
-
-      <!-- Testimoniales Slider -->
-      <div class="flex flex-col md:flex-row gap-6 overflow-x-auto py-4 reveal-me">
-        <!-- Testimonial 1 -->
-        <div class="bg-backgroundBody dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-xl p-6 flex-shrink-0 w-full md:w-1/3">
-          <div class="flex items-center mb-4">
-            <div class="w-16 h-16 rounded-full bg-gray-200 mr-4"></div>
-            <div>
-              <h5 class="font-medium">Miguel Rodríguez</h5>
-              <p class="text-sm text-secondary/70 dark:text-backgroundBody/50">Director IT, Sector Financiero</p>
-            </div>
-          </div>
-          <p class="italic">
-            "B drive transformó nuestra infraestructura de seguridad, reduciendo incidentes en un 70%. Su equipo demostró un conocimiento excepcional y compromiso con nuestros objetivos."
-          </p>
-        </div>
-
-        <!-- Testimonial 2 -->
-        <div class="bg-backgroundBody dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-xl p-6 flex-shrink-0 w-full md:w-1/3">
-          <div class="flex items-center mb-4">
-            <div class="w-16 h-16 rounded-full bg-gray-200 mr-4"></div>
-            <div>
-              <h5 class="font-medium">Laura Méndez</h5>
-              <p class="text-sm text-secondary/70 dark:text-backgroundBody/50">CIO, Sector Salud</p>
-            </div>
-          </div>
-          <p class="italic">
-            <!-- Continuación de la sección de Testimoniales -->
-            "La implementación de nuestro sistema de expedientes clínicos electrónicos ha mejorado significativamente la eficiencia de nuestros procesos. La solución de B drive ha sido crucial para nuestra transformación digital."
-          </p>
-        </div>
-
-        <!-- Testimonial 3 -->
-        <div class="bg-backgroundBody dark:bg-dark border border-gray-200 dark:border-gray-700 rounded-xl p-6 flex-shrink-0 w-full md:w-1/3">
-          <div class="flex items-center mb-4">
-            <div class="w-16 h-16 rounded-full bg-gray-200 mr-4"></div>
-            <div>
-              <h5 class="font-medium">Carlos Vega</h5>
-              <p class="text-sm text-secondary/70 dark:text-backgroundBody/50">Gerente de Operaciones, Sector Retail</p>
-            </div>
-          </div>
-          <p class="italic">
-            "Desde que implementamos las soluciones de B drive, nuestra productividad aumentó un 40%. Su enfoque personalizado y soporte constante marcaron la diferencia frente a otros proveedores."
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--==================================
-  Call-to-Action Final Section
-  ===================================-->
-  <section class="pt-14 md:pt-16 lg:pt-[88px] xl:pt-[100px] pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px] bg-primary text-backgroundBody">
-    <div class="container">
-      <div class="text-center max-w-3xl mx-auto reveal-me">
-        <h2 class="text-appear lg:leading-[1.1] mb-6 text-backgroundBody">
-          Impulsa tu transformación digital con expertos
-        </h2>
-        <p class="mb-10 text-backgroundBody/90">
-          Nuestro equipo de profesionales certificados está listo para ayudarte a convertir los desafíos tecnológicos en ventajas competitivas para tu organización.
-        </p>
-        
-        <!-- CTA Button -->
-        <a href="/contacto.html" class="rv-button rv-button-light block md:inline-block cursor-pointer">
-          <div class="rv-button-top">
-            <span>Contáctanos hoy</span>
-          </div>
-          <div class="rv-button-bottom">
-            <span class="text-nowrap">Contáctanos hoy</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Decorative elements at bottom -->
-  <div class="relative overflow-hidden">
-    <figure class="absolute bottom-[5%] -left-[2.5%] hidden lg:block opacity-50">
-      <img src="/images/decorative/circle-pattern.svg" alt="" class="w-24 h-24" />
-    </figure>
-    <figure class="absolute bottom-[2%] right-[5%] hidden lg:block opacity-50">
-      <img src="/images/decorative/dots-pattern.svg" alt="" class="w-20 h-20" />
-    </figure>
-  </div>
-</main>
-
-
-
-
->>>>>>> 0024e9a0671ab1ff70f985d8191dafc2a55cc9dc
   <!--=====================================
    Footer Section
 ======================================-->
@@ -1897,74 +1567,6 @@ Certificaciones Section
   </footer>
 
   <!-- Nueva sección de Copyright y certificaciones -->
-<<<<<<< HEAD
-    <div class="w-full bg-white py-6 relative z-10">
-      <div class="container mx-auto px-4">
-        <div class="flex items-start justify-between">
-          <!-- Copyright y enlaces - contenedor más pequeño -->
-          <div class="w-1/4 pr-8 mb-6 lg:mb-0">
-            <p class="text-gray-800 font-medium mb-2 text-xs">© 2024 Todos los derechos reservados</p>
-            <div class="flex flex-col gap-2">
-              <a href="privacidad.html"
-                class="text-blue-600 hover:text-blue-800 transition-colors duration-300 text-xs relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300">
-                Avisos de privacidad
-              </a>
-              <a href="sgi.html"
-                class="text-blue-600 hover:text-blue-800 transition-colors duration-300 text-xs relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300">
-                Política general del SGI
-              </a>
-              <a href="sga.html"
-                class="text-blue-600 hover:text-blue-800 transition-colors duration-300 text-xs relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300">
-                Política general del SGA
-              </a>
-              <a href="socios.html"
-                class="text-blue-600 hover:text-blue-800 transition-colors duration-300 text-xs relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300">
-                Acuerdo socios de negocio
-              </a>
-            </div>
-          </div>
-
-          <!-- Certificaciones (logos) - ahora ocupando el resto del espacio -->
-          <div class="flex-1 pt-4">
-            <div class="flex flex-wrap items-center justify-center gap-4">
-              <!-- 9 logos de certificaciones -->
-              <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center p-1">
-                <img src="images/logos/certificaciones/CER4.webp" alt="Certificación 1"
-                  class="w-16 h-16 object-contain">
-              </div>
-              <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center p-1">
-                <img src="images/logos/certificaciones/NMX-I-27001-NYCE-2015.png" alt="Certificación 2"
-                  class="w-16 h-16 object-contain">
-              </div>
-              <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center p-1">
-                <img src="images/logos/certificaciones/NMX-I-20000-1-NYCE-2019.png" alt="Certificación 3"
-                  class="w-16 h-16 object-contain">
-              </div>
-              <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center p-1">
-                <img src="images/logos/certificaciones/iso-9001.png" alt="Certificación 4"
-                  class="w-16 h-16 object-contain">
-              </div>
-              <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center p-1">
-                <img src="images/logos/certificaciones/gestion-integral.png" alt="Certificación 5"
-                  class="w-16 h-16 object-contain">
-              </div>
-              <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center p-1">
-                <img src="images/logos/certificaciones/tier-2025.png" alt="Certificación 6"
-                  class="w-16 h-16 object-contain">
-              </div>
-              <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center p-1">
-                <img src="images/logos/certificaciones/15504.webp" alt="Certificación 7"
-                  class="w-16 h-16 object-contain">
-              </div>
-              <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center p-1">
-                <img src="images/logos/certificaciones/37001.webp" alt="Certificación 8"
-                  class="w-16 h-16 object-contain">
-              </div>
-              <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center p-1">
-                <img src="images/logos/certificaciones/istqb2.png" alt="Certificación 9"
-                  class="w-16 h-16 object-contain">
-              </div>
-=======
   <div class="w-full bg-white py-6 relative z-10">
     <div class="container mx-auto px-4">
       <div class="flex items-start justify-between">
@@ -2026,88 +1628,11 @@ Certificaciones Section
             </div>
             <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center p-1">
               <img src="images/logos/certificaciones/istqb2.png" alt="Certificación 9" class="w-16 h-16 object-contain">
->>>>>>> 0024e9a0671ab1ff70f985d8191dafc2a55cc9dc
             </div>
           </div>
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-
-
-    <!-- Mark up for Script Section-->
-    <script src="js/lib/imagesloaded.pkgd.min.js"></script>
-    <script src="js/lib/gsap.min.js"></script>
-    <script src="js/lib/ScrollTrigger.min.js"></script>
-    <script src="js/lib/lenis.min.js"></script>
-    <script src="js/lib/split-types.min.js"></script>
-    <script src="js/lib/matter.min.js"></script>
-    <script src="js/career-tabs.js"></script>
-    <script src="js/lib/swiper.min.js"></script>
-    <script src="js/lib/headroom.min.js"></script>
-    <script src="js/lib/vanila-marquee.min.js"></script>
-    <script src="js/script.js"></script>
-
-
-    <script>
-      // Configuración de la animación
-      document.addEventListener('DOMContentLoaded', function () {
-        // Obtener dimensiones de la ventana
-        const width = window.innerWidth;
-        const height = window.innerHeight;
-
-        // Configurar las rutas SVG
-        const initialPath = `M0 0 L${width} 0 L${width} ${height} Q${width / 2} ${height + 300} 0 ${height} L0 0`;
-        const targetPath = `M0 0 L${width} 0 L${width} ${height} Q${width / 2} ${height} 0 ${height} L0 0`;
-
-        // Establecer la ruta inicial
-        const curve = document.getElementById('curve');
-        curve.setAttribute('d', initialPath);
-
-        // Función para animar la salida
-        window.animateExit = function () {
-          const intro = document.getElementById('introduction');
-          intro.classList.add('slide-up');
-
-          // Animar la curva SVG
-          setTimeout(() => {
-            curve.setAttribute('d', targetPath);
-            // Aplicar transición CSS para la animación suave de la curva
-            curve.style.transition = 'd 0.7s cubic-bezier(0.76, 0, 0.24, 1)';
-          }, 300);
-
-          // Eliminar el intro después de que termine la animación
-          setTimeout(() => {
-            intro.style.display = 'none';
-          }, 1500);
-        };
-
-        // Activar la animación de salida automáticamente después de 3 segundos
-        // También puedes llamar a window.animateExit() manualmente cuando quieras
-        setTimeout(window.animateExit, 3000);
-      });
-
-      // Adaptarse a cambios de tamaño de ventana
-      window.addEventListener('resize', function () {
-        const width = window.innerWidth;
-        const height = window.innerHeight;
-
-        const curve = document.getElementById('curve');
-        const currentPath = curve.getAttribute('d');
-
-        // Actualizar las dimensiones en el path
-        if (currentPath.includes('Q')) {
-          const initialPath = `M0 0 L${width} 0 L${width} ${height} Q${width / 2} ${height + 300} 0 ${height} L0 0`;
-          curve.setAttribute('d', initialPath);
-        } else {
-          const targetPath = `M0 0 L${width} 0 L${width} ${height} Q${width / 2} ${height} 0 ${height} L0 0`;
-          curve.setAttribute('d', targetPath);
-        }
-      });
-    </script>
-
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-=======
   </div>
 
 
@@ -2183,7 +1708,6 @@ Certificaciones Section
   </script>
 
   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
->>>>>>> 0024e9a0671ab1ff70f985d8191dafc2a55cc9dc
 
 
 </body>
