@@ -107,7 +107,7 @@ const initSmoothScrolling = () => {
                     gsap.from(e.words, {
                         scrollTrigger: {
                             trigger: t,
-                            start: "top 80%",
+                            start: "top 50%",
                             end: "top 50%",
                             scrub: false
                         },
@@ -126,7 +126,7 @@ const initSmoothScrolling = () => {
                 const e = new SplitType(t, { types: "lines" });
                 e.lines.forEach((e) => {
                     e = new SplitType(e, { types: "words" });
-                    gsap.from(e.words, { scrollTrigger: { trigger: t, start: "top 90%", end: "top 30%", scrub: !1 }, y: 120, rotation: 21, stagger: 0.02, duration: 0.7, ease: "power2.out" });
+                    gsap.from(e.words, { scrollTrigger: { trigger: t, start: "top 50%", end: "top 30%", scrub: !1 }, y: 120, rotation: 21, stagger: 0.02, duration: 0.7, ease: "power2.out" });
                 });
             });
         },
