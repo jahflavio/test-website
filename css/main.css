@@ -3199,62 +3199,80 @@ to{opacity:1;transform:translateY(0)}}.animate-keep-bounce{animation:bounce-open
   --tw-text-opacity: 1;
   color: rgb(237 240 245 / var(--tw-text-opacity));
 }
-.rv-button-white .rv-button-top{
+@keyframes bg-shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.rv-button-white .rv-button-top {
   z-index: 10;
   border-width: 1px;
   --tw-bg-opacity: 1;
   background-color: rgb(237 240 245 / var(--tw-bg-opacity));
 }
-:is(:where(.dark) .rv-button-white .rv-button-top){
+
+:is(:where(.dark) .rv-button-white .rv-button-top) {
   border-color: #edf0f51a;
   --tw-bg-opacity: 1;
   background-color: rgb(21 21 21 / var(--tw-bg-opacity));
 }
-.rv-button-white .rv-button-top span{
+
+.rv-button-white .rv-button-top span {
   --tw-text-opacity: 1;
   color: rgb(24 24 24 / var(--tw-text-opacity));
 }
-:is(:where(.dark) .rv-button-white .rv-button-top span){
+
+:is(:where(.dark) .rv-button-white .rv-button-top span) {
   --tw-text-opacity: 1;
   color: rgb(237 240 245 / var(--tw-text-opacity));
 }
-.rv-button-white .rv-button-bottom{
+
+.rv-button-white .rv-button-bottom {
   z-index: 9;
-  border-width: 1px;
-  --tw-border-opacity: 1;
+  
   border-color: rgb(24 24 24 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 24 24 / var(--tw-bg-opacity));
+  background: linear-gradient(to right, #6666ff, #161670, #cc066a, #98d128);
+  background-size: 300% 300%;
+  animation: bg-shine 5s ease-in-out infinite alternate;
 }
-:is(:where(.dark) .rv-button-white .rv-button-bottom){
+
+:is(:where(.dark) .rv-button-white .rv-button-bottom) {
   --tw-border-opacity: 1;
   border-color: rgb(237 240 245 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 240 245 / var(--tw-bg-opacity));
+  background: linear-gradient(to right, #98d128, #cc066a, #161670, #6666ff);
+  background-size: 300% 300%;
+  animation: bg-shine 5s ease-in-out infinite alternate;
 }
-.rv-button-white .rv-button-bottom span{
+
+.rv-button-white .rv-button-bottom span {
   --tw-text-opacity: 1;
   color: rgb(237 240 245 / var(--tw-text-opacity));
 }
-:is(:where(.dark) .rv-button-white .rv-button-bottom span){
+
+:is(:where(.dark) .rv-button-white .rv-button-bottom span) {
   --tw-text-opacity: 1;
   color: rgb(24 24 24 / var(--tw-text-opacity));
 }
+
 .rv-button-primary .rv-button-top{
   z-index: 10;
   --tw-bg-opacity: 1;
   background-color: rgb(102 102 255 / var(--tw-bg-opacity));
 }.rv-button-primary .rv-button-top span{
   --tw-text-opacity: 1;
-  color: rgb(24 24 24 / var(--tw-text-opacity));
+  color: #ffffff;
 }
-.rv-button-primary .rv-button-bottom{
+.rv-button-primary .rv-button-bottom {
   z-index: 9;
-  border-width: 1px;
-  --tw-border-opacity: 1;
+  
   border-color: rgb(24 24 24 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 24 24 / var(--tw-bg-opacity));
+  background: linear-gradient(to right, #6666ff, #161670, #cc066a, #98d128);
+  background-size: 300% 300%;
+  animation: bg-shine 5s ease-in-out infinite alternate;
 }
 .rv-button-primary .rv-button-bottom span{
   --tw-text-opacity: 1;
@@ -7805,3 +7823,6 @@ to{
   animation: text-shine 5s ease-in-out infinite alternate;
   font-weight: bold;
 }
+
+
+
