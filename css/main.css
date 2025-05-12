@@ -7508,10 +7508,6 @@ to{
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-
-
-
-
 .introduction {
   height: 100vh;
   width: 100vw;
@@ -7522,18 +7518,15 @@ to{
   z-index: 10000;
   background-color: #6666ff;
 }
-
 .introduction svg {
   position: absolute;
   top: 0;
   width: 100%;
   height: calc(100% + 300px);
 }
-
 .introduction svg path {
   fill: #6666ff;
 }
-
 .logo-container {
   display: flex;
   justify-content: center;
@@ -7677,7 +7670,7 @@ to{
   z-index: 1050;
   top: 80px; /* Ajusta según la altura de tu header */
   display: none; /* Oculto por defecto */
-  background-color: white;
+  background-color:#edf0f5;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
