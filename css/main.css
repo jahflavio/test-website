@@ -2117,7 +2117,7 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(102 102 255 / var(--tw-bg-opacity));
 }.bg-primary\/80{
-  background-color: rgb(102 102 255 / 0.8);
+  background-color: rgba(133, 133, 134, 0.438);
 }.bg-secondary{
   --tw-bg-opacity: 1;
   background-color: rgb(102 102 255 / var(--tw-bg-opacity));
@@ -7726,8 +7726,9 @@ to{
 .desktop-megamenu h3 {
   color: var(--color-primary, #6366f1);
   font-size: 1.125rem;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 1rem;
+  letter-spacing: 0.05em;
 }
 
 /* Estilos para los enlaces del megamenú */
@@ -7786,3 +7787,21 @@ to{
   }
 }
 
+@keyframes text-shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.chat-ia__title span {
+  background: linear-gradient(to right, #6666ff 0%, #161670 45%, #cc066a 75%, #98d128 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 500% auto;
+  animation: text-shine 5s ease-in-out infinite alternate;
+  font-weight: bold;
+}
