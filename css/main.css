@@ -2118,13 +2118,14 @@ video {
   background-color: rgb(102 102 255 / var(--tw-bg-opacity));
 }.bg-primary\/80{
   background-color: rgba(133, 133, 134, 0.438);
-}.bg-secondary{
+}.bg-secondary {
+  background: linear-gradient(205deg, #6666ff 0%, #bdbdfc 50%, #6666ff 100%);
   --tw-bg-opacity: 1;
-  background-color: rgb(102 102 255 / var(--tw-bg-opacity));
-}.bg-secondary\/50{
-  background-color: rgb(24 24 24 / 0.5);
+}
+.bg-secondary\/50{
+  background-color: rgb(102 102 255 / 0.5);
 }.bg-secondary\/60{
-  background-color: rgb(24 24 24 / 0.6);
+  background-color: rgb(102 102 255 / 0.6);
 }.bg-transparent{
   background-color: transparent;
 }.bg-white{
