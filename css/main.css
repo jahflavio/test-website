@@ -2119,7 +2119,7 @@ video {
 }.bg-primary\/80{
   background-color: rgba(133, 133, 134, 0.438);
 }.bg-secondary {
-  background: linear-gradient(205deg, #6666ff 0%, #bdbdfc 50%, #6666ff 100%);
+  background-color: rgb(102 102 255 / var(--tw-bg-opacity));
   --tw-bg-opacity: 1;
 }
 .bg-secondary\/50{
