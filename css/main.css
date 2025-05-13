@@ -3224,6 +3224,7 @@ to{opacity:1;transform:translateY(0)}}.animate-keep-bounce{animation:bounce-open
 .rv-button-white .rv-button-top span {
   --tw-text-opacity: 1;
   color: rgb(24 24 24 / var(--tw-text-opacity));
+  
 }
 
 :is(:where(.dark) .rv-button-white .rv-button-top span) {
@@ -7818,4 +7819,67 @@ to{
 }
 
 
+.gradient-title {
+  font-size: 2rem; /* equivalente a text-4xl */
+}
+
+.gradient-title span {
+  background: linear-gradient(to right, #6666ff 0%, #161670 45%, #cc066a 75%, #98d128 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 500% auto;
+  animation: gradient-title-shine 5s ease-in-out infinite alternate;
+  font-weight: bold;
+}
+
+@keyframes gradient-title-shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+@keyframes bg-shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Parte superior animada */
+.rv-button-anim-top .rv-button-top {
+  z-index: 10;
+  border-width: 1px;
+  background: linear-gradient(to right, #6666ff, #161670, #cc066a, #98d128);
+  background-size: 300% 300%;
+  animation: bg-shine 5s ease-in-out infinite alternate;
+}
+
+/* Parte inferior estática (color base oscuro) */
+.rv-button-anim-top .rv-button-bottom {
+  z-index: 9;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(24 24 24 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 24 / var(--tw-bg-opacity));
+}
+
+/* Texto superior (claro sobre fondo animado) */
+.rv-button-anim-top .rv-button-top span {
+  --tw-text-opacity: 1;
+  color: rgb(237 240 245 / var(--tw-text-opacity));
+}
+
+/* Texto inferior (oscuro sobre fondo oscuro) */
+.rv-button-anim-top .rv-button-bottom span {
+  --tw-text-opacity: 1;
+  color: rgb(237 240 245 / var(--tw-text-opacity));
+}
 
