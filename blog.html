@@ -122,12 +122,108 @@
         -webkit-backdrop-filter: blur(16px);
       "></div>
     </div>
-    <nav class="z-[1000] w-full fixed px-5 sm:px-8 pt-1 sm:pt-5 nav-top" aria-label="Main navigation">
+        <nav class="z-[1000] w-full fixed px-5 sm:px-8 pt-1 sm:pt-5 nav-top" aria-label="Main navigation">
       <div class="flex justify-between">
         <a href="index.html">
           <img class="max-h-[68px] w-auto inline-block dark:hidden" src="images/logo.png" alt="logo" />
           <img class="max-h-[68px] w-auto dark:inline-block hidden" src="images/logo-white.png" alt="logo" />
         </a>
+        <div class="desktop-menu hidden lg:flex items-center">
+          <ul class="flex space-x-6">
+            <!-- Inicio -->
+            <li class="desktop-menu-item">
+              <a href="index.html" class="text-black dark:text-white hover:text-primary transition-colors">Inicio</a>
+              <!-- Nosotros -->
+            <li class="desktop-menu-item">
+              <a href="nosotros.html"
+                class="text-black dark:text-white hover:text-primary transition-colors">Nosotros</a>
+            </li>
+            <!-- Certificaciones -->
+            <li class="desktop-menu-item">
+              <a href="certificaciones.html"
+                class="text-black dark:text-white hover:text-primary transition-colors">Certificaciones</a>
+
+              <!-- Servicios - con megamenú -->
+            <li class="desktop-menu-item has-megamenu relative group">
+              <a href="servicios.html"
+                class="text-black dark:text-white hover:text-primary transition-colors desktop-dropdown-toggle">
+                Servicios
+              </a>
+
+              <!-- Contenedor del megamenú -->
+              <div class="desktop-megamenu">
+                <div class="container mx-auto">
+                  <div class="grid">
+                    <!-- Columna 1 -->
+                    <div>
+                      <h3 class="text-lg font-bold mb-4 text-primary">Servicios administrados</h3>
+                      <ul>
+                        <li class="mb-2"><a href="centro-de-operaciones-de-red.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Centro de operaciones de red
+                            (NOC)</a></li>
+                        <li class="mb-2"><a href="servicios/ecommerce.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Ciberseguridad</a></li>
+                        <li class="mb-2"><a href="servicios/aplicaciones-web.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Centro de datos</a></li>
+                        <li class="mb-2"><a href="servicios/aplicaciones-web.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Servicios en la nube</a></li>
+                      </ul>
+                    </div>
+
+                    <!-- Columna 2 -->
+                    <div>
+                      <h3 class="text-lg font-bold mb-4 text-primary">Soluciones empresariales</h3>
+                      <ul>
+                        <li class="mb-2"><a href="servicios/seo.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Contact
+                            Center / Video Conference</a></li>
+                        <li class="mb-2"><a href="servicios/google-ads.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Robotic
+                            Process Automation (RPA)</a></li>
+                        <li class="mb-2"><a href="servicios/redes-sociales.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Business
+                            Process Management - IT (BPM)</a></li>
+                        <li class="mb-2"><a href="servicios/redes-sociales.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Soluciones
+                            tecnológicas a la medida</a></li>
+                      </ul>
+                    </div>
+
+                    <!-- Columna 3 -->
+                    <div>
+                      <h3 class="text-lg font-bold mb-4 text-primary">Desarrollo y Software</h3>
+                      <ul>
+                        <li class="mb-2"><a href="servicios/estrategia-digital.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Software factory</a></li>
+                        <li class="mb-2"><a href="servicios/ux-ui.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Sistema de boletaje</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+
+            <!-- Blog -->
+            <li class="relative py-2 mx-3 pr-8 md:pr-10 lg:pr-12">
+              <a href="blog.html"
+                class="px-4 py-2 font-medium text-black dark:text-white hover:text-primary transition-colors">Blog</a>
+            </li>
+
+            <!-- Contacto (ahora dentro de un li como debe ser) -->
+            <li class="relative">
+              <a href="contacto.html" class="rv-button rv-button-primary rv-button-sm block md:inline-block">
+                <div class="rv-button-top text-center">
+                  <span>Contáctanos</span>
+                </div>
+                <div class="rv-button-bottom text-center">
+                  <span class="text-nowrap">Contáctanos</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="flex items-center">
           <div
             class="menu-open cursor-pointer relative h-[68px] w-[68px] before:content-[''] before:absolute before:top-[28px] before:left-1/2 before:w-9 before:h-0.5 before:bg-black dark:before:bg-backgroundBody before:-translate-x-1/2 before:transition-all before:duration-300 after:content-[''] after:absolute after:bottom-[28px] after:left-1/2 after:w-9 after:h-0.5 after:bg-black dark:after:bg-backgroundBody after:-translate-x-1/2 after:transition-all after:duration-300 hover:before:top-[25px] hover:after:bottom-[25px]">
@@ -149,270 +245,136 @@
     <div
       class="menu-wrapper relative max-w-[300px] sm:max-w-[400px] md:max-w-[580px] lg:max-w-[900px] xl:max-w-[1030px] mx-auto pb-4 flex flex-col gap-8 md:gap-16 md:pt-0 md:top-16 2xl:top-20 z-[99999] max-h-[90vh] md:max-h-none overflow-y-auto md:overflow-visible overflow-x-hidden">
       <ul class="menu-list">
-        <li class="menu-list-item menu-list-item-anchor ">
-          <a href="#"
-            class="text-white text-[28px] md:text-[42px] xl:text-[56px] leading-[70px] xl:leading-[90px] menu-list-item-text">Home</a>
+        <!-- Inicio -->
+        <li class="menu-list-item menu-list-item-anchor active">
+          <a href="index.html"
+            class="text-white text-[28px] md:text-[35px] xl:text-[40px] leading-[60px] xl:leading-[70px] menu-list-item-text">Inicio</a>
+        </li>
+
+        <!-- Nosotros -->
+        <li class="menu-list-item menu-list-item-anchor">
+          <a href="nosotros.html"
+            class="text-white text-[28px] md:text-[35px] xl:text-[40px] leading-[60px] xl:leading-[70px] menu-list-item-text">Nosotros</a>
+        </li>
+
+        <!-- Certificaciones -->
+        <li class="menu-list-item menu-list-item-anchor">
+          <a href="certificaciones.html"
+            class="text-white text-[28px] md:text-[35px] xl:text-[40px] leading-[60px] xl:leading-[70px] menu-list-item-text">Certificaciones</a>
+        </li>
+
+        <!-- Servicios -->
+        <li class="menu-list-item menu-list-item-anchor">
+          <a href="/servicios.html"
+            class="text-white text-[28px] md:text-[35px] xl:text-[40px] leading-[60px] xl:leading-[70px] menu-list-item-text dropdown-toggle">Servicios</a>
           <ul
-            class="menu-list-item-dropdown relative md:absolute top-0 w-full md:w-[350px] lg:w-[600px] h-fit left-0 md:left-[48%] lg:left-[33%] xl:left-[44%] grid grid-cols-1 lg:grid-cols-2 gap-x-4 max-h-[60vh] md:max-h-none overflow-y-auto md:overflow-visible md:pb-0">
+            class="menu-list-item-dropdown relative md:absolute top-0 w-full md:w-[600px] lg:w-[600px] h-fit left-0 md:left-[48%] lg:left-[33%] xl:left-[44%] grid grid-cols-1 lg:grid-cols-1 gap-x-4 max-h-[60vh] md:max-h-none overflow-y-auto md:overflow-visible md:pb-0 hidden">
+
+            <!-- Servicios Administrados -->
             <li>
-              <a href="index.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                01 -
-                <span class="font-geologica italic text-white text-sm">Design Agency</span></a>
+              <a href="servicios-administrados.html"
+                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] font-bold dropdown-toggle-subitem">Servicios
+                Administrados</a>
+              <ul class="pl-6 subitem-dropdown hidden">
+                <li>
+                  <a href="noc.html"
+                    class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Centro
+                    de operaciones de red (NOC)
+                    <span class="font-geologica italic text-white text-sm"></span></a>
+                </li>
+                <li>
+                  <a href="ciberseguridad.html"
+                    class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Ciberseguridad
+                    <span class="font-geologica italic text-white text-sm"></span></a>
+                </li>
+                <li>
+                  <a href="centro-datos.html"
+                    class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Centro
+                    de datos
+                    <span class="font-geologica italic text-white text-sm"></span></a>
+                </li>
+                <li>
+                  <a href="cloud.html"
+                    class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Servicios
+                    en la nube
+                    <span class="font-geologica italic text-white text-sm"></span></a>
+                </li>
+              </ul>
             </li>
+
+            <!-- Soluciones Empresariales -->
             <li>
-              <a href="homepage-02.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                02 -
-                <span class="font-geologica italic text-white text-sm">Digital Solutions</span></a>
+              <a href="soluciones-empresariales.html"
+                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] font-bold dropdown-toggle-subitem">Soluciones
+                Empresariales</a>
+              <ul class="pl-6 subitem-dropdown hidden">
+                <li>
+                  <a href="contact-center.html"
+                    class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Contact
+                    Center / Video Conference
+                    <span class="font-geologica italic text-white text-sm"></span></a>
+                </li>
+                <li>
+                  <a href="rpa.html"
+                    class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Robotic
+                    Process Automation (RPA)
+                    <span class="font-geologica italic text-white text-sm"></span></a>
+                </li>
+                <li>
+                  <a href="bpm.html"
+                    class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Business
+                    Process Management - IT (BPM)
+                    <span class="font-geologica italic text-white text-sm"></span></a>
+                </li>
+                <li>
+                  <a href="soluciones-medida.html"
+                    class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Soluciones
+                    tecnológicas a la medida
+                    <span class="font-geologica italic text-white text-sm"></span></a>
+                </li>
+              </ul>
             </li>
+            <!-- Desarrollo y Software -->
             <li>
-              <a href="homepage-03.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                03 -
-                <span class="font-geologica italic text-white text-sm">Portfolio</span></a>
-            </li>
-            <li>
-              <a href="homepage-04.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                04 -
-                <span class="font-geologica italic text-white text-sm">Photography</span></a>
-            </li>
-            <li>
-              <a href="homepage-05.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                05 -
-                <span class="font-geologica italic text-white text-sm">SEO Agency</span></a>
-            </li>
-            <li>
-              <a href="homepage-06.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                06 -
-                <span class="font-geologica italic text-white text-sm">Creative Agency</span></a>
-            </li>
-            <li>
-              <a href="homepage-07.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                07 -
-                <span class="font-geologica italic text-white text-sm">Design Studio</span></a>
-            </li>
-            <li>
-              <a href="homepage-08.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                08 -
-                <span class="font-geologica italic text-white text-sm">Business Solutions</span></a>
-            </li>
-            <li>
-              <a href="homepage-09.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                09 -
-                <span class="font-geologica italic text-white text-sm">Personal Branding</span></a>
-            </li>
-            <li>
-              <a href="homepage-10.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                10 -
-                <span class="font-geologica italic text-white text-sm">Full-Service Agency</span></a>
-            </li>
-            <li>
-              <a href="homepage-11.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                11 -
-                <span class="font-geologica italic text-white text-sm">Video Production</span></a>
-            </li>
-            <li>
-              <a href="homepage-12.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                12 -
-                <span class="font-geologica italic text-white text-sm">AI Agency</span></a>
-            </li>
-            <li>
-              <a href="homepage-13.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                13 -
-                <span class="font-geologica italic text-white text-sm">Travel Agency</span></a>
-            </li>
-            <li>
-              <a href="homepage-14.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                14 -
-                <span class="font-geologica italic text-white text-sm">Film Production Agency
-                </span></a>
-            </li>
-            <li>
-              <a href="homepage-15.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                15 -
-                <span class="font-geologica italic text-white text-sm">Branding Agency</span></a>
-            </li>
-            <li>
-              <a href="homepage-16.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                16 -
-                <span class="font-geologica italic text-white text-sm">Marketing Agency</span></a>
-            </li>
-            <li>
-              <a href="homepage-17.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                17 -
-                <span class="font-geologica italic text-white text-sm">App Development Agency</span></a>
-            </li>
-            <li>
-              <a href="homepage-18.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                18 -
-                <span class="font-geologica italic text-white text-sm">Copywriting Agency</span></a>
-            </li>
-            <li>
-              <a href="homepage-19.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                19 -
-                <span class="font-geologica italic text-white text-sm">Brand Strategy</span></a>
-            </li>
-            <li>
-              <a href="homepage-20.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                20 -
-                <span class="font-geologica italic text-white text-sm">Social Media Agency</span></a>
-            </li>
-            <li>
-              <a href="homepage-21.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                21 -
-                <span class="font-geologica italic text-white text-sm">Law Firm Agency</span></a>
-            </li>
-            <li>
-              <a href="homepage-22.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                22 -
-                <span class="font-geologica italic text-white text-sm">Event Planner Agency</span></a>
-            </li>
-            <li>
-              <a href="homepage-23.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                23 -
-                <span class="font-geologica italic text-white text-sm">Insurance Agency</span></a>
-            </li>
-            <li>
-              <a href="homepage-24.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                24 -
-                <span class="font-geologica italic text-white text-sm">Consulting Agency</span></a>
-            </li>
-            <li>
-              <a href="homepage-25.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Homepage
-                25 -
-                <span class="font-geologica italic text-white text-sm">News Agency</span></a>
+              <a href="desarrollo-software.html"
+                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] font-bold dropdown-toggle-subitem">Desarrollo
+                y Software</a>
+              <ul class="pl-6 subitem-dropdown hidden">
+                <li>
+                  <a href="software-factory.html"
+                    class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Software
+                    Factory
+                    <span class="font-geologica italic text-white text-sm"></span></a>
+                </li>
+                <li>
+                  <a href="sistema-boletaje.html"
+                    class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Sistema
+                    de boletaje
+                    <span class="font-geologica italic text-white text-sm"></span></a>
+                </li>
+              </ul>
             </li>
           </ul>
         </li>
-        <li class="menu-list-item menu-list-item-anchor ">
-          <a href="#"
-            class="text-white text-[28px] md:text-[42px] xl:text-[56px] leading-[70px] xl:leading-[90px] menu-list-item-text">About</a>
-          <ul
-            class="menu-list-item-dropdown relative md:absolute top-0 w-full md:w-auto h-fit left-0 md:left-[48%] max-h-[60vh] md:max-h-none overflow-y-auto md:overflow-visible md:pb-0">
-            <li>
-              <a href="about.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">About
-              </a>
-            </li>
-            <li>
-              <a href="about-02.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">About
-                02</a>
-            </li>
-          </ul>
+        <!-- Blog -->
+        <li class="menu-list-item menu-list-item-anchor">
+          <a href="certificaciones.html"
+            class="text-white text-[28px] md:text-[35px] xl:text-[40px] leading-[60px] xl:leading-[70px] menu-list-item-text">Blog</a>
         </li>
-        <li class="menu-list-item menu-list-item-anchor w-full ">
-          <a href="#"
-            class="text-white text-[28px] md:text-[42px] xl:text-[56px] leading-[70px] xl:leading-[90px] menu-list-item-text">Services</a>
-          <ul
-            class="menu-list-item-dropdown relative md:absolute top-0 w-full md:w-auto h-fit left-0 md:left-[48%] max-h-[60vh] md:max-h-none overflow-y-auto md:overflow-visible md:pb-0">
-            <li>
-              <a href="services.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Services
-              </a>
-            </li>
-            <li>
-              <a href="services-details.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Services
-                Details
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-list-item menu-list-item-anchor w-full active">
-          <a href="#"
-            class="text-white text-[28px] md:text-[42px] xl:text-[56px] leading-[70px] xl:leading-[90px] menu-list-item-text">Blog</a>
-          <ul
-            class="menu-list-item-dropdown relative md:absolute top-0 w-full md:w-auto h-fit left-0 md:left-[48%] max-h-[60vh] md:max-h-none overflow-y-auto md:overflow-visible md:pb-0">
-            <li>
-              <a href="blog.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] active">Blog
-              </a>
-            </li>
-            <li>
-              <a href="blog-02.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Blog
-                02
-              </a>
-            </li>
-            <li>
-              <a href="blog-details.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Blog
-                Details
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu-list-item menu-list-item-anchor w-full ">
-          <a href="#"
-            class="text-white text-[28px] md:text-[42px] xl:text-[56px] leading-[70px] xl:leading-[90px] menu-list-item-text">Projects</a>
-          <ul
-            class="menu-list-item-dropdown relative md:absolute top-0 w-full md:w-auto h-fit left-0 md:left-[48%] max-h-[60vh] md:max-h-none overflow-y-auto md:overflow-visible md:pb-0">
-            <li>
-              <a href="project.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Project
-              </a>
-            </li>
-            <li>
-              <a href="project-02.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Project
-                02
-              </a>
-            </li>
-            <li>
-              <a href="project-03.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Project
-                03
-              </a>
-            </li>
-            <li>
-              <a href="project-details.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Project
-                Details
-              </a>
-            </li>
-            <li>
-              <a href="project-details-02.html"
-                class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] ">Project
-                Details 02
-              </a>
-            </li>
-          </ul>
-        </li>
+
+        <!-- Contacto -->
+        <li class="menu-list-item menu-list-item-anchor">
+          <a href="/contacto.html"
+            class="text-white text-[28px] md:text-[35px] xl:text-[40px] leading-[60px] xl:leading-[70px] menu-list-item-text">Contáctanos</a>
       </ul>
     </div>
     <div class="menu-footer max-lg:hidden lg:block fixed bottom-0 w-full border-t border-white border-opacity-10">
       <div
         class="menu-footer-content max-w-[300px] sm:max-w-[400px] md:max-w-[600px] lg:max-w-[900px] xl:max-w-[1130px] flex justify-between mx-auto py-8 flex-col md:flex-row">
-        <p class="text-sm w-full md:w-auto mb-4 md:mb-0">
-          2261 Market Street #5039 San Francisco, CA 94114
-        </p>
+
         <div class="flex gap-6">
           <span>
-            <a href="https://www.facebook.com/staticmania">
+            <a href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 20 20" fill="none"
                 class="stroke-[#565656] hover:stroke-white duration-200">
                 <path
@@ -426,7 +388,7 @@
             </a>
           </span>
           <span>
-            <a href="https://www.youtube.com/channel/UCAaNCn1kzI1fXD4-fPD157Q">
+            <a href="#">
               <svg xmlns="http://www.w3.org/2000/svg" class="stroke-[#565656] hover:stroke-white duration-200"
                 width="23" height="23" viewBox="0 0 20 20" fill="none">
                 <path d="M12.5 10L8.75 7.5V12.5L12.5 10Z" stroke-linecap="round" stroke-linejoin="round" />
@@ -437,7 +399,7 @@
             </a>
           </span>
           <span>
-            <a href="https://www.instagram.com/staticmania">
+            <a href="#">
               <svg xmlns="http://www.w3.org/2000/svg" class="stroke-[#565656] hover:stroke-white duration-200"
                 width="23" height="23" viewBox="0 0 20 20" fill="none">
                 <path
@@ -453,91 +415,7 @@
             </a>
           </span>
           <span>
-            <a href="https://dribbble.com/staticmania/">
-              <svg xmlns="http://www.w3.org/2000/svg" class="stroke-[#565656] hover:stroke-white duration-200"
-                width="23" height="23" viewBox="0 0 20 20" fill="none">
-                <path
-                  d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M5.55078 16.037C6.66328 14.1939 8.23315 12.6697 10.1082 11.6119C11.9832 10.5542 14.0997 9.99896 16.2524 10C16.6741 10 17.0905 10.0206 17.5017 10.0616"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M14.6894 4.14795C13.5183 5.58738 12.0409 6.74742 10.3647 7.54356C8.68846 8.3397 6.85577 8.75188 5.00011 8.75007C4.20969 8.75045 3.42101 8.67625 2.64453 8.52846"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M6.71484 3.25684C8.59445 4.35971 10.1529 5.93502 11.2355 7.82638C12.3181 9.71775 12.8871 11.8594 12.8861 14.0387C12.8869 15.0598 12.7627 16.0771 12.5165 17.0681"
-                  stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </a>
-          </span>
-          <span>
-            <a href="https://www.figma.com/@staticmania">
-              <svg xmlns="http://www.w3.org/2000/svg" class="stroke-[#565656] hover:stroke-white duration-200"
-                width="23" height="23" viewBox="0 0 20 20" fill="none">
-                <path
-                  d="M12.6562 12.6562C14.1233 12.6562 15.3125 11.467 15.3125 10C15.3125 8.53299 14.1233 7.34375 12.6562 7.34375C11.1892 7.34375 10 8.53299 10 10C10 11.467 11.1892 12.6562 12.6562 12.6562Z"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M10 7.34368V2.03125H7.34375C6.63927 2.03125 5.96364 2.3111 5.4655 2.80925C4.96735 3.30739 4.6875 3.98302 4.6875 4.6875C4.6875 5.39198 4.96735 6.06761 5.4655 6.56575C5.96364 7.0639 6.63927 7.34375 7.34375 7.34375L10 7.34368Z"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M10 12.6562V7.34375H7.34375C6.63927 7.34375 5.96364 7.6236 5.4655 8.12175C4.96735 8.61989 4.6875 9.29552 4.6875 10C4.6875 10.7045 4.96735 11.3801 5.4655 11.8783C5.96364 12.3764 6.63927 12.6562 7.34375 12.6562L10 12.6562Z"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M10 7.34368V2.03125H12.6562C13.3607 2.03125 14.0364 2.3111 14.5345 2.80925C15.0326 3.30739 15.3125 3.98302 15.3125 4.6875C15.3125 5.39198 15.0326 6.06761 14.5345 6.56575C14.0364 7.0639 13.3607 7.34375 12.6562 7.34375L10 7.34368Z"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M10 12.6562V15.3125C10 15.8379 9.84423 16.3515 9.55236 16.7883C9.26049 17.2251 8.84564 17.5656 8.36028 17.7666C7.87491 17.9677 7.34083 18.0203 6.82556 17.9178C6.3103 17.8153 5.837 17.5623 5.46551 17.1908C5.09402 16.8194 4.84104 16.3461 4.73854 15.8308C4.63605 15.3155 4.68865 14.7814 4.88969 14.2961C5.09074 13.8107 5.4312 13.3959 5.86801 13.104C6.30483 12.8121 6.81839 12.6563 7.34375 12.6563L10 12.6562Z"
-                  stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </a>
-          </span>
-          <span>
-            <a href="https://discord.gg/fSxDJyvJmr">
-              <svg xmlns="http://www.w3.org/2000/svg" class="stroke-[#565656] hover:stroke-white duration-200"
-                width="23" height="23" viewBox="0 0 20 20" fill="none">
-                <path
-                  d="M7.5 12.1875C8.01777 12.1875 8.4375 11.7678 8.4375 11.25C8.4375 10.7322 8.01777 10.3125 7.5 10.3125C6.98223 10.3125 6.5625 10.7322 6.5625 11.25C6.5625 11.7678 6.98223 12.1875 7.5 12.1875Z"
-                  fill="#565656" />
-                <path
-                  d="M12.5 12.1875C13.0178 12.1875 13.4375 11.7678 13.4375 11.25C13.4375 10.7322 13.0178 10.3125 12.5 10.3125C11.9822 10.3125 11.5625 10.7322 11.5625 11.25C11.5625 11.7678 11.9822 12.1875 12.5 12.1875Z"
-                  fill="#565656" />
-                <path
-                  d="M5.8125 6.24985C7.16746 5.82575 8.58012 5.6149 9.99987 5.62485C11.4196 5.6149 12.8322 5.82575 14.1872 6.24983"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M14.1871 13.75C12.8322 14.1741 11.4195 14.3849 9.99981 14.375C8.58008 14.3849 7.16744 14.1741 5.8125 13.75"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M12.1148 14.2255L13.0542 16.1044C13.1168 16.2306 13.2204 16.3319 13.348 16.3916C13.4756 16.4513 13.6196 16.466 13.7567 16.4333C15.6737 15.9646 17.3264 15.1474 18.5301 14.1012C18.622 14.0221 18.6892 13.9182 18.7234 13.802C18.7577 13.6857 18.7576 13.562 18.7232 13.4457L16.069 4.59837C16.0422 4.50915 15.9959 4.42704 15.9334 4.35799C15.8708 4.28894 15.7937 4.2347 15.7076 4.19922C14.9577 3.89221 14.1822 3.65213 13.39 3.48181C13.2391 3.44873 13.0813 3.47261 12.9469 3.54884C12.8125 3.62508 12.711 3.74829 12.662 3.89481L12.0391 5.76353"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M7.88822 14.2255L6.94874 16.1044C6.88614 16.2306 6.78258 16.3319 6.65499 16.3916C6.5274 16.4513 6.38332 16.466 6.2463 16.4333C4.32922 15.9646 2.67656 15.1474 1.47286 14.1012C1.38094 14.0222 1.31381 13.9182 1.27955 13.802C1.24529 13.6857 1.24536 13.562 1.27974 13.4457L3.93395 4.59836C3.96074 4.50915 4.00709 4.42703 4.06961 4.35798C4.13214 4.28894 4.20927 4.2347 4.29539 4.19921C5.04524 3.8922 5.82077 3.65213 6.61293 3.48181C6.76385 3.44873 6.92168 3.47261 7.05607 3.54884C7.19046 3.62508 7.29194 3.74829 7.34099 3.89481L7.9639 5.76353"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M7.5 12.1875C8.01777 12.1875 8.4375 11.7678 8.4375 11.25C8.4375 10.7322 8.01777 10.3125 7.5 10.3125C6.98223 10.3125 6.5625 10.7322 6.5625 11.25C6.5625 11.7678 6.98223 12.1875 7.5 12.1875Z"
-                  fill="#565656" />
-                <path
-                  d="M12.5 12.1875C13.0178 12.1875 13.4375 11.7678 13.4375 11.25C13.4375 10.7322 13.0178 10.3125 12.5 10.3125C11.9822 10.3125 11.5625 10.7322 11.5625 11.25C11.5625 11.7678 11.9822 12.1875 12.5 12.1875Z"
-                  fill="#565656" />
-                <path
-                  d="M5.8125 6.24985C7.16746 5.82575 8.58012 5.6149 9.99987 5.62485C11.4196 5.6149 12.8322 5.82575 14.1872 6.24983"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M14.1871 13.75C12.8322 14.1741 11.4195 14.3849 9.99981 14.375C8.58008 14.3849 7.16744 14.1741 5.8125 13.75"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M12.1148 14.2255L13.0542 16.1044C13.1168 16.2306 13.2204 16.3319 13.348 16.3916C13.4756 16.4513 13.6196 16.466 13.7567 16.4333C15.6737 15.9646 17.3264 15.1474 18.5301 14.1012C18.622 14.0221 18.6892 13.9182 18.7234 13.802C18.7577 13.6857 18.7576 13.562 18.7232 13.4457L16.069 4.59837C16.0422 4.50915 15.9959 4.42704 15.9334 4.35799C15.8708 4.28894 15.7937 4.2347 15.7076 4.19922C14.9577 3.89221 14.1822 3.65213 13.39 3.48181C13.2391 3.44873 13.0813 3.47261 12.9469 3.54884C12.8125 3.62508 12.711 3.74829 12.662 3.89481L12.0391 5.76353"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M7.88822 14.2255L6.94874 16.1044C6.88614 16.2306 6.78258 16.3319 6.65499 16.3916C6.5274 16.4513 6.38332 16.466 6.2463 16.4333C4.32922 15.9646 2.67656 15.1474 1.47286 14.1012C1.38094 14.0222 1.31381 13.9182 1.27955 13.802C1.24529 13.6857 1.24536 13.562 1.27974 13.4457L3.93395 4.59836C3.96074 4.50915 4.00709 4.42703 4.06961 4.35798C4.13214 4.28894 4.20927 4.2347 4.29539 4.19921C5.04524 3.8922 5.82077 3.65213 6.61293 3.48181C6.76385 3.44873 6.92168 3.47261 7.05607 3.54884C7.19046 3.62508 7.29194 3.74829 7.34099 3.89481L7.9639 5.76353"
-                  stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </a>
-          </span>
-          <span>
-            <a href="https://www.linkedin.com/company/staticmania/">
+            <a href="#">
               <svg xmlns="http://www.w3.org/2000/svg" class="stroke-[#565656] hover:stroke-white duration-200"
                 width="23" height="23" viewBox="0 0 20 20" fill="none">
                 <path
@@ -723,7 +601,7 @@
                   </h3>
                 </div>
               </a>
-              
+
 
               <a href="blog-details.html" class="rv-button rv-button-primary2">
                 <div class="rv-button-top !text-center flex items-center">
