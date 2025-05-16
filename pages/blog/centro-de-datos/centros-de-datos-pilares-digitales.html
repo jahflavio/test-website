@@ -125,9 +125,105 @@
     <nav class="z-[1000] w-full fixed px-5 sm:px-8 pt-1 sm:pt-5 nav-top" aria-label="Main navigation">
       <div class="flex justify-between">
         <a href="index.html">
-          <img class="max-h-[68px] w-auto inline-block dark:hidden" src="../../../images/logo.png" alt="logo" />
-          <img class="max-h-[68px] w-auto dark:inline-block hidden" src="../../../images/logo-white.png" alt="logo" />
+          <img class="max-h-[68px] w-auto inline-block dark:hidden" src="images/logo.png" alt="logo" />
+          <img class="max-h-[68px] w-auto dark:inline-block hidden" src="images/logo-white.png" alt="logo" />
         </a>
+        <div class="desktop-menu hidden lg:flex items-center">
+          <ul class="flex space-x-6">
+            <!-- Inicio -->
+            <li class="desktop-menu-item">
+              <a href="index.html" class="text-black dark:text-white hover:text-primary transition-colors">Inicio</a>
+            </li>
+            <!-- Nosotros -->
+            <li class="desktop-menu-item">
+              <a href="nosotros.html"
+                class="text-black dark:text-white hover:text-primary transition-colors">Nosotros</a>
+            </li>
+            <!-- Certificaciones -->
+            <li class="desktop-menu-item">
+              <a href="certificaciones.html"
+                class="text-black dark:text-white hover:text-primary transition-colors">Certificaciones</a>
+            </li>
+            <!-- Servicios - con megamenú -->
+            <li class="desktop-menu-item has-megamenu relative group">
+              <a href="servicios.html"
+                class="text-black dark:text-white hover:text-primary transition-colors">
+                <span>Servicios</span>
+              </a>
+
+              <!-- Contenedor del megamenú -->
+              <div class="desktop-megamenu">
+                <div class="container mx-auto">
+                  <div class="grid grid-cols-3 gap-6">
+                    <!-- Columna 1 -->
+                    <div>
+                      <h3 class="text-lg font-bold mb-4 text-primary">Servicios administrados</h3>
+                      <ul>
+                        <li class="mb-2"><a href="centro-de-operaciones-de-red.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Centro de operaciones de red
+                            (NOC)</a></li>
+                        <li class="mb-2"><a href="servicios/ecommerce.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Ciberseguridad</a></li>
+                        <li class="mb-2"><a href="servicios/aplicaciones-web.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Centro de datos</a></li>
+                        <li class="mb-2"><a href="servicios/aplicaciones-web.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Servicios en la nube</a></li>
+                      </ul>
+                    </div>
+
+                    <!-- Columna 2 -->
+                    <div>
+                      <h3 class="text-lg font-bold mb-4 text-primary">Soluciones empresariales</h3>
+                      <ul>
+                        <li class="mb-2"><a href="servicios/seo.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Contact
+                            Center / Video Conference</a></li>
+                        <li class="mb-2"><a href="servicios/google-ads.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Robotic
+                            Process Automation (RPA)</a></li>
+                        <li class="mb-2"><a href="servicios/redes-sociales.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Business
+                            Process Management - IT (BPM)</a></li>
+                        <li class="mb-2"><a href="servicios/redes-sociales.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Soluciones
+                            tecnológicas a la medida</a></li>
+                      </ul>
+                    </div>
+
+                    <!-- Columna 3 -->
+                    <div>
+                      <h3 class="text-lg font-bold mb-4 text-primary">Desarrollo y Software</h3>
+                      <ul>
+                        <li class="mb-2"><a href="servicios/estrategia-digital.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Software factory</a></li>
+                        <li class="mb-2"><a href="servicios/ux-ui.html"
+                            class="text-gray-700 dark:text-gray-300 hover:text-primary">Sistema de boletaje</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- Blog -->
+            <li class="desktop-menu-item">
+              <a href="blog.html"
+                class="text-black dark:text-white hover:text-primary transition-colors">Blog</a>
+            </li>
+
+            <!-- Contacto -->
+            <li class="desktop-menu-item">
+              <a href="contacto.html" class="rv-button rv-button-primary rv-button-sm block md:inline-block">
+                <div class="rv-button-top text-center">
+                  <span>Contáctanos</span>
+                </div>
+                <div class="rv-button-bottom text-center">
+                  <span class="text-nowrap">Contáctanos</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="flex items-center">
           <div
             class="menu-open cursor-pointer relative h-[68px] w-[68px] before:content-[''] before:absolute before:top-[28px] before:left-1/2 before:w-9 before:h-0.5 before:bg-black dark:before:bg-backgroundBody before:-translate-x-1/2 before:transition-all before:duration-300 after:content-[''] after:absolute after:bottom-[28px] after:left-1/2 after:w-9 after:h-0.5 after:bg-black dark:after:bg-backgroundBody after:-translate-x-1/2 after:transition-all after:duration-300 hover:before:top-[25px] hover:after:bottom-[25px]">
