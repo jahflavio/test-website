@@ -463,7 +463,7 @@
   </div>
 
 
-  <main class="lg:mb-[600px] relative z-10 bg-backgroundBody dark:bg-dark">
+  <main class="relative z-10 bg-backgroundBody dark:bg-dark">
     <!--=====================================
    Page Header Details Section
 ======================================-->
@@ -1036,10 +1036,19 @@
   </main>
 
   <!--=====================================
-   Footer Section
-======================================-->
-  
-  <footer class="relative lg:fixed  bg-black bottom-0 w-full pt-0 sm:pt-0 md:pt-0 pb-24 lg:pb-48 overflow-hidden">
+        Footer Section
+  ======================================-->
+  <div style="height: 450px"></div>
+
+  <footer class="relative lg:fixed bg-black bottom-0 w-full pb-24 lg:pb-48 overflow-hidden lg:z-0">
+    <!-- Imagen en la parte superior del footer sin espacios -->
+    <div class="w-full overflow-hidden" style="margin-top: -1px;">
+      <img src="/images/footer-background.png" alt="Footer Background" class="w-full object-cover h-30 opacity-40 block" />
+    </div>
+    
+    <!-- Espaciador para separar la imagen del contenido -->
+    <div class="pt-24"></div>
+    
     <div class="container">
       <!-- Footer Content Grid -->
       <div
@@ -1054,7 +1063,7 @@
             soluciones son adecuadas para tu caso
           </p>
           <!-- Meeting Scheduler Card -->
-          <a href="/contacto.html" class="block w-[300px]">
+          <a href="contacto.html" class="block w-[300px]">
             <div
               class="flex p-4 group bg-primary gap-4 justify-between items-center backdrop-blur-2xl rounded-full cursor-pointer">
               <div class="basis-1/4 pl-4">
@@ -1085,26 +1094,26 @@
                 class="block text-white transition-colors duration-300 font-semibold hover:text-primary">NOC</a>
             </li>
             <li class="mb-4">
-              <a href="/ciberseguridad.html"
+              <a href="ciberseguridad.html"
                 class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Ciberseguridad</a>
             </li>
             <li class="mb-4">
-              <a href="/centro-datos.html"
+              <a href="centro-datos.html"
                 class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Centro de
                 Datos</a>
             </li>
             <li class="mb-4">
-              <a href="/cloud-services.html"
+              <a href="cloud-services.html"
                 class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Servicios en la
                 Nube</a>
             </li>
             <li class="mb-4">
-              <a href="/rpa.html"
+              <a href="rpa.html"
                 class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Automatización
                 RPA</a>
             </li>
             <li class="mb-4">
-              <a href="/bpm.html"
+              <a href="bpm.html"
                 class="block text-white transition-colors duration-300 font-semibold hover:text-primary">BPM</a>
             </li>
           </ul>
@@ -1117,34 +1126,20 @@
           </h5>
           <ul>
             <li class="mb-4">
-              <a href="/nosotros.html"
+              <a href="nosotros.html"
                 class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Nosotros</a>
             </li>
             <li class="mb-4">
-              <a href="/certificaciones.html"
+              <a href="certificaciones.html"
                 class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Certificaciones</a>
             </li>
             <li class="mb-4">
-              <a href="/preguntas-frecuentes.html"
+              <a href="preguntas-frecuentes.html"
                 class="block text-white transition-colors duration-300 font-semibold hover:text-primary">FAQ</a>
             </li>
             <li class="mb-4">
-              <a href="/contacto.html"
+              <a href="contacto.html"
                 class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Contacto</a>
-            </li>
-            <li class="mb-4">
-              <a href="/terminos.html"
-                class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Términos de
-                Servicio</a>
-            </li>
-            <li class="mb-4">
-              <a href="/privacidad.html"
-                class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Política de
-                Privacidad</a>
-            </li>
-            <li class="mb-4">
-              <a href="/carrera.html"
-                class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Carreras</a>
             </li>
           </ul>
         </div>
@@ -1156,32 +1151,28 @@
           </h5>
           <ul>
             <li class="mb-4">
-              <a href="/contact-center.html"
+              <a href="contact-center.html"
                 class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Contact
                 Center</a>
             </li>
             <li class="mb-4">
-              <a href="/software-factory.html"
+              <a href="software-factory.html"
                 class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Software
                 Factory</a>
             </li>
             <li class="mb-4">
-              <a href="/boletaje.html"
+              <a href="boletaje.html"
                 class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Sistema de
                 Boletaje</a>
             </li>
             <li class="mb-4">
-              <a href="/industrias.html"
-                class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Industrias</a>
-            </li>
-            <li class="mb-4">
-              <a href="/sector-gobierno.html"
-                class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Servicios 
+              <a href="sector-gobierno.html"
+                class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Servicios
                 Administrados</a>
             </li>
             <li class="mb-4">
-              <a href="/sector-privado.html"
-                class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Soluciones 
+              <a href="sector-privado.html"
+                class="block text-white transition-colors duration-300 font-semibold hover:text-primary">Soluciones
                 Empresariales</a>
             </li>
           </ul>
@@ -1206,19 +1197,19 @@
         <div class="w-1/4 pr-8 mb-6 lg:mb-0">
           <p class="text-gray-800 font-medium mb-2 text-xs">© 2024 Todos los derechos reservados</p>
           <div class="flex flex-col gap-2">
-            <a href="/privacidad.html"
+            <a href="politica-de-privacidad.html"
               class="text-blue-600 hover:text-blue-800 transition-colors duration-300 text-xs relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300">
               Avisos de privacidad
             </a>
-            <a href="/politica-general-sgi.html"
+            <a href="politica-general-politica-general-sgi.html"
               class="text-blue-600 hover:text-blue-800 transition-colors duration-300 text-xs relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300">
               Política general del SGI
             </a>
-            <a href="/politica-general-sga.html"
+            <a href="politica-general-politica-general-sga.html"
               class="text-blue-600 hover:text-blue-800 transition-colors duration-300 text-xs relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300">
               Política general del SGA
             </a>
-            <a href="/acuerdo-con-socios-de-negocio.html"
+            <a href="acuerdo-con-socios-de-negocio.html"
               class="text-blue-600 hover:text-blue-800 transition-colors duration-300 text-xs relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 hover:after:w-full after:transition-all after:duration-300">
               Acuerdo socios de negocio
             </a>
