@@ -3422,8 +3422,10 @@ to{
   position: absolute;
   height: 100%;
   width: 100%;
-  font-family: 'geologica';
-  text-transform: uppercase;animation:textRotation 20s linear infinite;
+  font-family: 'Geologica';
+  text-transform: none;
+  animation: textRotation 20s linear infinite;
+
 }
 .text-2 span{
   position: absolute;
