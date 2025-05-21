@@ -56,7 +56,7 @@ const initSmoothScrolling = () => {
             const e = document.querySelectorAll(".reveal-text");
             e.forEach((e) => {
                 var t = new SplitType(e, { types: "words" });
-                gsap.from(t.words, { scrollTrigger: { trigger: e, start: "top 34%", end: "top -10%", scrub: !0, pin: ".about", pinSpacing: !0 }, opacity: 0.2, stagger: 0.1, duration: 1, ease: "power2.out" });
+                gsap.from(t.words, { scrollTrigger: { trigger: e, start: "top 90%", end: "top -10%", scrub: !0, pin: ".about", pinSpacing: !0 }, opacity: 0.2, stagger: 0.1, duration: 1, ease: "power2.out" });
             });
         },
         initTextReveal2() {
