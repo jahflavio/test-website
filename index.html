@@ -1,29 +1,81 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-mx">
 
 <head>
   <meta charset="utf-8" />
-  <title>B drive | Soluciones tecnológicas empresariales</title>
+  <title>Transformación Digital para tu Empresa | B drive</title>
 
-  <!--Meta For No Index-->
-  <meta name="robots" content="noindex, Nofollow, Noimageindex">
+  <!-- Permitir indexación en motores de búsqueda -->
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
 
-  <!-- mobile responsive meta -->
+  <!-- Mobile responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5" />
-  <meta name="description" content="Bdrive es una empresa con soluciones empresariales tecnológicas" />
 
+  <!-- SEO meta -->
+  <meta name="description"
+    content="En B drive diseñamos, integramos y gestionamos soluciones de TI a la medida para optimizar la eficiencia, seguridad y competitividad de tu organización." />
+  <meta name="keywords"
+    content="B drive, soluciones TI, transformación digital, automatización, infraestructura TI, ciberseguridad, desarrollo de software, inteligencia de datos, comunicaciones unificadas" />
+  <meta name="author" content="B drive" />
+  <meta name="copyright" content="©2025 B drive" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Soluciones Tecnológicas Personalizadas | B drive" />
+  <meta property="og:description"
+    content="Transformamos retos en oportunidades a través de soluciones tecnológicas integrales. Ciberseguridad, infraestructura, cloud, software y más." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.b-drive.com.mx/" />
+  <meta property="og:image" content="https://www.b-drive.com.mx/images/about/index.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Soluciones Tecnológicas Personalizadas | B drive" />
+  <meta name="twitter:description"
+    content="Automatización, software, ciberseguridad e infraestructura TI para organizaciones que buscan transformar su presente y futuro digital." />
+  <meta name="twitter:image" content="https://www.b-drive.com.mx/images/about/index.png" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "B drive",
+    "url": "https://www.b-drive.com.mx/",
+    "logo": "https://www.b-drive.com.mx/images/logo.svg",
+    "description": "Empresa mexicana de soluciones de Tecnología de la Información con enfoque en automatización, ciberseguridad, infraestructura, inteligencia de datos y desarrollo a la medida.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "CDMX, Querétaro y Monterrey",
+      "addressCountry": "MX"
+    },
+    "sameAs": []
+  }
+  </script>
+
+  <!-- SEO técnico adicional -->
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="format-detection" content="telephone=no, date=no, address=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.b-drive.com.mx/" />
 
   <!-- Stylesheets -->
-  <link href="css/main.css" rel="stylesheet" />
+  <link href="../css/main.css" rel="stylesheet" />
 
-  <!--Favicon-->
-  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
-  <link rel="shortcut icon" href="images/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
-  <link rel="manifest" href="images/site.webmanifest" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+  <link rel="shortcut icon" href="../images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
 
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/site.webmanifest" />
 </head>
+
 
 <body>
   <div id="introduction" class="introduction">
@@ -131,29 +183,30 @@
     </div>
     <nav class="z-[1000] w-full fixed px-5 sm:px-8 pt-1 sm:pt-5 nav-top" aria-label="Main navigation">
       <div class="flex justify-between">
-        <a href="index.html">
-          <img class="max-h-[68px] w-auto inline-block dark:hidden" src="images/logo.png" alt="logo" />
-          <img class="max-h-[68px] w-auto dark:inline-block hidden" src="images/logo-white.png" alt="logo" />
+        <a href="../index.html">
+          <img class="max-h-[68px] w-auto inline-block dark:hidden" src="../images/logo.png" alt="logo" />
+          <img class="max-h-[68px] w-auto dark:inline-block hidden" src="../images/logo-white.png" alt="logo" />
         </a>
         <div class="desktop-menu hidden lg:flex items-center">
           <ul class="flex space-x-6">
             <!-- Inicio -->
             <li class="desktop-menu-item">
-              <a href="index.html" class="text-black dark:text-white hover:text-primary transition-colors">Inicio</a>
+              <a href="../index.html"
+                class="text-black dark:text-white hover:text-primary transition-colors active">Inicio</a>
             </li>
             <!-- Nosotros -->
             <li class="desktop-menu-item">
-              <a href="nosotros.html"
+              <a href="../nosotros.html"
                 class="text-black dark:text-white hover:text-primary transition-colors">Nosotros</a>
             </li>
             <!-- Certificaciones -->
             <li class="desktop-menu-item">
-              <a href="certificaciones.html"
+              <a href="../certificaciones.html"
                 class="text-black dark:text-white hover:text-primary transition-colors">Certificaciones</a>
             </li>
             <!-- Servicios - con megamenú -->
             <li class="desktop-menu-item has-megamenu relative group">
-              <a href="servicios.html" class="text-black dark:text-white hover:text-primary transition-colors">
+              <a href="../servicios.html" class="text-black dark:text-white hover:text-primary transition-colors">
                 <span>Servicios</span>
               </a>
 
@@ -165,14 +218,14 @@
                     <div>
                       <h3 class="text-lg font-bold mb-4 text-primary">Servicios administrados</h3>
                       <ul>
-                        <li class="mb-2"><a href="/servicios/centro-de-operaciones-de-red.html"
+                        <li class="mb-2"><a href="../servicios/centro-de-operaciones-de-red.html"
                             class="text-gray-700 dark:text-gray-300 hover:text-primary">Centro de operaciones de red
                             (NOC)</a></li>
-                        <li class="mb-2"><a href="servicios/ecommerce.html"
+                        <li class="mb-2"><a href="../servicios/seguridad.html"
                             class="text-gray-700 dark:text-gray-300 hover:text-primary">Ciberseguridad</a></li>
-                        <li class="mb-2"><a href="servicios/aplicaciones-web.html"
+                        <li class="mb-2"><a href="../servicios/centro-de-datos.html"
                             class="text-gray-700 dark:text-gray-300 hover:text-primary">Centro de datos</a></li>
-                        <li class="mb-2"><a href="servicios/aplicaciones-web.html"
+                        <li class="mb-2"><a href="../servicios/nube.html"
                             class="text-gray-700 dark:text-gray-300 hover:text-primary">Servicios en la nube</a></li>
                       </ul>
                     </div>
@@ -181,16 +234,16 @@
                     <div>
                       <h3 class="text-lg font-bold mb-4 text-primary">Soluciones empresariales</h3>
                       <ul>
-                        <li class="mb-2"><a href="servicios/seo.html"
+                        <li class="mb-2"><a href="../servicios/centro-de-contacto.html"
                             class="text-gray-700 dark:text-gray-300 hover:text-primary">Contact
                             Center / Video Conference</a></li>
-                        <li class="mb-2"><a href="servicios/google-ads.html"
+                        <li class="mb-2"><a href="../servicios/rpa.html"
                             class="text-gray-700 dark:text-gray-300 hover:text-primary">Robotic
                             Process Automation (RPA)</a></li>
-                        <li class="mb-2"><a href="servicios/redes-sociales.html"
+                        <li class="mb-2"><a href="../servicios/bpm.html"
                             class="text-gray-700 dark:text-gray-300 hover:text-primary">Business
                             Process Management - IT (BPM)</a></li>
-                        <li class="mb-2"><a href="servicios/redes-sociales.html"
+                        <li class="mb-2"><a href="../servicios/soluciones-medida.html"
                             class="text-gray-700 dark:text-gray-300 hover:text-primary">Soluciones
                             tecnológicas a la medida</a></li>
                       </ul>
@@ -200,9 +253,9 @@
                     <div>
                       <h3 class="text-lg font-bold mb-4 text-primary">Desarrollo y Software</h3>
                       <ul>
-                        <li class="mb-2"><a href="servicios/estrategia-digital.html"
+                        <li class="mb-2"><a href="../servicios/software-factory.html"
                             class="text-gray-700 dark:text-gray-300 hover:text-primary">Software factory</a></li>
-                        <li class="mb-2"><a href="servicios/ux-ui.html"
+                        <li class="mb-2"><a href="../servicios/boletaje.html"
                             class="text-gray-700 dark:text-gray-300 hover:text-primary">Sistema de boletaje</a></li>
                       </ul>
                     </div>
@@ -213,12 +266,12 @@
 
             <!-- Blog -->
             <li class="desktop-menu-item">
-              <a href="blog.html" class="text-black dark:text-white hover:text-primary transition-colors">Blog</a>
+              <a href="../blog.html" class="text-black dark:text-white hover:text-primary transition-colors">Blog</a>
             </li>
 
             <!-- Contacto -->
             <li class="relative">
-              <a href="contacto.html" class="rv-button rv-button-primary rv-button-sm block md:inline-block">
+              <a href="../contacto.html" class="rv-button rv-button-primary rv-button-sm block md:inline-block">
                 <div class="rv-button-top text-center">
                   <span>Contáctanos</span>
                 </div>
@@ -252,54 +305,54 @@
       <ul class="menu-list">
         <!-- Inicio -->
         <li class="menu-list-item menu-list-item-anchor active">
-          <a href="index.html"
+          <a href="../index.html"
             class="text-white text-[28px] md:text-[35px] xl:text-[40px] leading-[60px] xl:leading-[70px] menu-list-item-text">Inicio</a>
         </li>
 
         <!-- Nosotros -->
         <li class="menu-list-item menu-list-item-anchor">
-          <a href="nosotros.html"
+          <a href="../nosotros.html"
             class="text-white text-[28px] md:text-[35px] xl:text-[40px] leading-[60px] xl:leading-[70px] menu-list-item-text">Nosotros</a>
         </li>
 
         <!-- Certificaciones -->
         <li class="menu-list-item menu-list-item-anchor">
-          <a href="certificaciones.html"
+          <a href="../certificaciones.html"
             class="text-white text-[28px] md:text-[35px] xl:text-[40px] leading-[60px] xl:leading-[70px] menu-list-item-text">Certificaciones</a>
         </li>
 
         <!-- Servicios -->
         <li class="menu-list-item menu-list-item-anchor">
-          <a href="/servicios.html"
+          <a href="../servicios.html"
             class="text-white text-[28px] md:text-[35px] xl:text-[40px] leading-[60px] xl:leading-[70px] menu-list-item-text dropdown-toggle">Servicios</a>
           <ul
             class="menu-list-item-dropdown relative md:absolute top-0 w-full md:w-[600px] lg:w-[600px] h-fit left-0 md:left-[48%] lg:left-[33%] xl:left-[44%] grid grid-cols-1 lg:grid-cols-1 gap-x-4 max-h-[60vh] md:max-h-none overflow-y-auto md:overflow-visible md:pb-0 hidden">
 
             <!-- Servicios Administrados -->
             <li>
-              <a href="servicios-administrados.html"
+              <span
                 class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] font-bold dropdown-toggle-subitem">Servicios
-                Administrados</a>
+                Administrados</span>
               <ul class="pl-6 subitem-dropdown hidden">
                 <li>
-                  <a href="/servicios/centro-de-operaciones-de-red.html"
+                  <a href="../servicios/centro-de-operaciones-de-red.html"
                     class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Centro
                     de operaciones de red (NOC)
                     <span class="font-geologica italic text-white text-sm"></span></a>
                 </li>
                 <li>
-                  <a href="ciberseguridad.html"
+                  <a href="../servicios/seguridad.html"
                     class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Ciberseguridad
                     <span class="font-geologica italic text-white text-sm"></span></a>
                 </li>
                 <li>
-                  <a href="centro-datos.html"
+                  <a href="../servicios/centro-datos.html"
                     class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Centro
                     de datos
                     <span class="font-geologica italic text-white text-sm"></span></a>
                 </li>
                 <li>
-                  <a href="cloud.html"
+                  <a href="../servicios/nube.html"
                     class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Servicios
                     en la nube
                     <span class="font-geologica italic text-white text-sm"></span></a>
@@ -309,30 +362,31 @@
 
             <!-- Soluciones Empresariales -->
             <li>
-              <a href="soluciones-empresariales.html"
+              <span
                 class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] font-bold dropdown-toggle-subitem">Soluciones
-                Empresariales</a>
+                empresariales</span>
+
               <ul class="pl-6 subitem-dropdown hidden">
                 <li>
-                  <a href="contact-center.html"
+                  <a href="../servicios/centro-de-contacto.html"
                     class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Contact
                     Center / Video Conference
                     <span class="font-geologica italic text-white text-sm"></span></a>
                 </li>
                 <li>
-                  <a href="rpa.html"
+                  <a href="../servicios/rpa.html"
                     class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Robotic
                     Process Automation (RPA)
                     <span class="font-geologica italic text-white text-sm"></span></a>
                 </li>
                 <li>
-                  <a href="bpm.html"
+                  <a href="../servicios/bpm.html"
                     class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Business
                     Process Management - IT (BPM)
                     <span class="font-geologica italic text-white text-sm"></span></a>
                 </li>
                 <li>
-                  <a href="soluciones-medida.html"
+                  <a href="../servicios/soluciones-medida.html"
                     class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Soluciones
                     tecnológicas a la medida
                     <span class="font-geologica italic text-white text-sm"></span></a>
@@ -341,18 +395,19 @@
             </li>
             <!-- Desarrollo y Software -->
             <li>
-              <a href="desarrollo-software.html"
+              <span
                 class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list text-base md:text-lg leading-8 md:leading-[50px] font-bold dropdown-toggle-subitem">Desarrollo
-                y Software</a>
+                y Software</span>
+
               <ul class="pl-6 subitem-dropdown hidden">
                 <li>
-                  <a href="software-factory.html"
+                  <a href="../servicios/software-factory.html"
                     class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Software
                     Factory
                     <span class="font-geologica italic text-white text-sm"></span></a>
                 </li>
                 <li>
-                  <a href="sistema-boletaje.html"
+                  <a href="../servicios/boletaje.html"
                     class="text-white inline-block pb-1 pl-3 menu-list-item-dropdown-list md:text-sm leading-8 md:leading-[50px]">Sistema
                     de boletaje
                     <span class="font-geologica italic text-white text-sm"></span></a>
@@ -363,13 +418,13 @@
         </li>
         <!-- Blog -->
         <li class="menu-list-item menu-list-item-anchor">
-          <a href="certificaciones.html"
+          <a href="../blog.html"
             class="text-white text-[28px] md:text-[35px] xl:text-[40px] leading-[60px] xl:leading-[70px] menu-list-item-text">Blog</a>
         </li>
 
         <!-- Contacto -->
         <li class="menu-list-item menu-list-item-anchor">
-          <a href="/contacto.html"
+          <a href="../contacto.html"
             class="text-white text-[28px] md:text-[35px] xl:text-[40px] leading-[60px] xl:leading-[70px] menu-list-item-text">Contáctanos</a>
       </ul>
     </div>
@@ -379,7 +434,7 @@
 
         <div class="flex gap-6">
           <span>
-            <a href="#">
+            <a href="..#">
               <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 20 20" fill="none"
                 class="stroke-[#565656] hover:stroke-white duration-200">
                 <path
@@ -393,7 +448,7 @@
             </a>
           </span>
           <span>
-            <a href="#">
+            <a href="..#">
               <svg xmlns="http://www.w3.org/2000/svg" class="stroke-[#565656] hover:stroke-white duration-200"
                 width="23" height="23" viewBox="0 0 20 20" fill="none">
                 <path d="M12.5 10L8.75 7.5V12.5L12.5 10Z" stroke-linecap="round" stroke-linejoin="round" />
@@ -404,7 +459,7 @@
             </a>
           </span>
           <span>
-            <a href="#">
+            <a href="..#">
               <svg xmlns="http://www.w3.org/2000/svg" class="stroke-[#565656] hover:stroke-white duration-200"
                 width="23" height="23" viewBox="0 0 20 20" fill="none">
                 <path
@@ -420,7 +475,7 @@
             </a>
           </span>
           <span>
-            <a href="#">
+            <a href="..#">
               <svg xmlns="http://www.w3.org/2000/svg" class="stroke-[#565656] hover:stroke-white duration-200"
                 width="23" height="23" viewBox="0 0 20 20" fill="none">
                 <path
@@ -1273,78 +1328,78 @@
       </div>
     </div>
   </div>
-  
-
-    <!-- Mark up for Script Section-->
-    <script src="js/lib/imagesloaded.pkgd.min.js"></script>
-    <script src="js/lib/gsap.min.js"></script>
-    <script src="js/lib/ScrollTrigger.min.js"></script>
-    <script src="js/lib/lenis.min.js"></script>
-    <script src="js/lib/split-types.min.js"></script>
-    <script src="js/lib/matter.min.js"></script>
-    <script src="js/career-tabs.js"></script>
-    <script src="js/lib/swiper.min.js"></script>
-    <script src="js/lib/headroom.min.js"></script>
-    <script src="js/lib/vanila-marquee.min.js"></script>
-    <script src="js/script.js"></script>
 
 
-    <script>
-      // Configuración de la animación
-      document.addEventListener('DOMContentLoaded', function () {
-        // Obtener dimensiones de la ventana
-        const width = window.innerWidth;
-        const height = window.innerHeight;
+  <!-- Mark up for Script Section-->
+  <script src="js/lib/imagesloaded.pkgd.min.js"></script>
+  <script src="js/lib/gsap.min.js"></script>
+  <script src="js/lib/ScrollTrigger.min.js"></script>
+  <script src="js/lib/lenis.min.js"></script>
+  <script src="js/lib/split-types.min.js"></script>
+  <script src="js/lib/matter.min.js"></script>
+  <script src="js/career-tabs.js"></script>
+  <script src="js/lib/swiper.min.js"></script>
+  <script src="js/lib/headroom.min.js"></script>
+  <script src="js/lib/vanila-marquee.min.js"></script>
+  <script src="js/script.js"></script>
 
-        // Configurar las rutas SVG
-        const initialPath = `M0 0 L${width} 0 L${width} ${height} Q${width / 2} ${height + 300} 0 ${height} L0 0`;
-        const targetPath = `M0 0 L${width} 0 L${width} ${height} Q${width / 2} ${height} 0 ${height} L0 0`;
 
-        // Establecer la ruta inicial
-        const curve = document.getElementById('curve');
-        curve.setAttribute('d', initialPath);
+  <script>
+    // Configuración de la animación
+    document.addEventListener('DOMContentLoaded', function () {
+      // Obtener dimensiones de la ventana
+      const width = window.innerWidth;
+      const height = window.innerHeight;
 
-        // Función para animar la salida
-        window.animateExit = function () {
-          const intro = document.getElementById('introduction');
-          intro.classList.add('slide-up');
+      // Configurar las rutas SVG
+      const initialPath = `M0 0 L${width} 0 L${width} ${height} Q${width / 2} ${height + 300} 0 ${height} L0 0`;
+      const targetPath = `M0 0 L${width} 0 L${width} ${height} Q${width / 2} ${height} 0 ${height} L0 0`;
 
-          // Animar la curva SVG
-          setTimeout(() => {
-            curve.setAttribute('d', targetPath);
-            // Aplicar transición CSS para la animación suave de la curva
-            curve.style.transition = 'd 0.7s cubic-bezier(0.76, 0, 0.24, 1)';
-          }, 300);
+      // Establecer la ruta inicial
+      const curve = document.getElementById('curve');
+      curve.setAttribute('d', initialPath);
 
-          // Eliminar el intro después de que termine la animación
-          setTimeout(() => {
-            intro.style.display = 'none';
-          }, 1500);
-        };
+      // Función para animar la salida
+      window.animateExit = function () {
+        const intro = document.getElementById('introduction');
+        intro.classList.add('slide-up');
 
-        // Activar la animación de salida automáticamente después de 3 segundos
-        // También puedes llamar a window.animateExit() manualmente cuando quieras
-        setTimeout(window.animateExit, 3000);
-      });
-
-      // Adaptarse a cambios de tamaño de ventana
-      window.addEventListener('resize', function () {
-        const width = window.innerWidth;
-        const height = window.innerHeight;
-
-        const curve = document.getElementById('curve');
-        const currentPath = curve.getAttribute('d');
-
-        // Actualizar las dimensiones en el path
-        if (currentPath.includes('Q')) {
-          const initialPath = `M0 0 L${width} 0 L${width} ${height} Q${width / 2} ${height + 300} 0 ${height} L0 0`;
-          curve.setAttribute('d', initialPath);
-        } else {
-          const targetPath = `M0 0 L${width} 0 L${width} ${height} Q${width / 2} ${height} 0 ${height} L0 0`;
+        // Animar la curva SVG
+        setTimeout(() => {
           curve.setAttribute('d', targetPath);
-        }
-      });
-    </script>
+          // Aplicar transición CSS para la animación suave de la curva
+          curve.style.transition = 'd 0.7s cubic-bezier(0.76, 0, 0.24, 1)';
+        }, 300);
+
+        // Eliminar el intro después de que termine la animación
+        setTimeout(() => {
+          intro.style.display = 'none';
+        }, 1500);
+      };
+
+      // Activar la animación de salida automáticamente después de 3 segundos
+      // También puedes llamar a window.animateExit() manualmente cuando quieras
+      setTimeout(window.animateExit, 3000);
+    });
+
+    // Adaptarse a cambios de tamaño de ventana
+    window.addEventListener('resize', function () {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      const curve = document.getElementById('curve');
+      const currentPath = curve.getAttribute('d');
+
+      // Actualizar las dimensiones en el path
+      if (currentPath.includes('Q')) {
+        const initialPath = `M0 0 L${width} 0 L${width} ${height} Q${width / 2} ${height + 300} 0 ${height} L0 0`;
+        curve.setAttribute('d', initialPath);
+      } else {
+        const targetPath = `M0 0 L${width} 0 L${width} ${height} Q${width / 2} ${height} 0 ${height} L0 0`;
+        curve.setAttribute('d', targetPath);
+      }
+    });
+  </script>
 
 
 </body>
