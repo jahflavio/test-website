@@ -1333,17 +1333,19 @@
 <!--=====================================
         Footer Section
   ======================================-->
-  <div style="height: 450px"></div>
+  <!-- Espaciador solo para desktop -->
+  <div class="hidden lg:block" style="height: 350px"></div>
 
-  <footer class="relative lg:fixed bg-black bottom-0 w-full pb-24 lg:pb-48 overflow-hidden lg:z-0">
+  <footer class="relative lg:fixed bg-black bottom-0 w-full pb-12 lg:pb-48 overflow-hidden lg:z-0">
     <!-- Imagen en la parte superior del footer sin espacios -->
-    <div class="w-full overflow-hidden" style="margin-top: -1px;">
-      <img src="images/footer-background.png" alt="Footer Background" class="w-full object-cover h-30 opacity-40 block" />
+    <div class="w-full overflow-hidden -mt-1">
+      <img src="images/footer-background.png" alt="Footer Background"
+        class="w-full object-cover h-30 opacity-40 block" />
     </div>
-    
+
     <!-- Espaciador para separar la imagen del contenido -->
     <div class="pt-24"></div>
-    
+
     <div class="container">
       <!-- Footer Content Grid -->
       <div
@@ -1540,39 +1542,6 @@
               <img src="images/logos/certificaciones/37001.png" alt="Certificación 8" class="w-16 h-16 object-contain">
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!---Modal -->
-  <div aria-hidden="false"
-    class="fixed z-[99999999990] hidden inset-0 top-6 items-start justify-center bg-metal-900 bg-dark-200/25"
-    onclick="javascript.void(0)" id="modal" role="dialog">
-    <div class="relative w-full p-4 h-auto animate-keep-bounce max-w-xl">
-      <div class="relative bg-white dark:bg-dark p-2.5">
-        <div class="p-10 max-lg:p-5">
-          <div class="flex items-center justify-between pb-5">
-            <h5 class="text-secondary dark:text-backgroundBody">Search</h5>
-            <button class="text-secondary dark:text-backgroundBody" id="ok-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
-                <path
-                  d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"
-                  class="fill-secondary dark:fill-backgroundBody"></path>
-              </svg>
-            </button>
-          </div>
-          <form class="mt-5">
-            <div>
-              <div class="flex">
-                <div class="relative w-full">
-                  <input
-                    class="block w-full focus:outline-none focus:ring-0 text-secondary dark:text-backgroundBody border py-3.5 px-5 dark:border-dark bg-transparent placeholder:text-secondary/50 dark:placeholder:text-backgroundBody/50 outline-none focus:border-primary dark:focus:border-primary duration-300 transition-all"
-                    id="#id-10" placeholder="Search RIVOR Component" type="text" value="" />
-                </div>
-              </div>
-            </div>
-          </form>
         </div>
       </div>
     </div>
